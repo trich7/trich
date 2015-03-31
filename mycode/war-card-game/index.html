@@ -1,0 +1,58 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+	<div class='container'>
+		<div class="sign">
+			<h3>Lets Play some</h3>
+			<h1>WAR</h1>
+		</div>
+		<div class='rules'>How to Play</div>
+		<div class="row row-centered">
+			<button class="metal linear btn btn-lg btn-warning deal">Deal</button>
+			<button class="metal linear btn btn-lg btn-warning play">Play!</button>
+		</div>
+
+		<div class="half" style="float:right;">
+			<h2>Computer's Deck</h2>
+			<div id="opp-card" class="card-container1">
+				<script type="text/template" id="card-template">
+					<h2><%= str_value %></h2>
+					<h4><%= suit %></h4>
+				</script>
+			</div>
+			<div class="counter1"><b>0 cards</b></div>
+		</div>
+		<div class="half" style="float:left;">
+			<h2>Your Awesome Deck</h2>
+			<div id="my-card" class="card-container2">
+				<script type="text/template" id="card-template">
+					<h2><%= str_value %></h2>
+					<h4><%= suit %></h4>
+				</script>
+			</div>
+			<div class="counter2"><b>0 cards</b></div>
+		</div>
+		<div style="clear:both;"></div>
+		<div class="rule-box">
+			<p>1. First click deal to deal the cards.</p>
+			<p>2. Then click play to play each round.</p>
+			<p>3. The highest card wins the pair.</p>
+			<p>4. If there is a tie, war is declared. 3 cards are mucked and the following fourth card decides the winner of the war. The winner takes all cards.
+			<p>5. Aces have the value of 1 and are the lowest card.</p>
+			<p>6. The first player to win the entire deck of cards is the winner.</p>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src='script.js'></script>
+</body>
+
+</html>

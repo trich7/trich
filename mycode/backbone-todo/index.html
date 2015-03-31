@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+	<div class='content-container'>
+		<h1>todos</h1>
+		<div class="ribbon left_ribbon">
+			<span>Total Tasks : </span>
+			<span class="counter">0</span>
+		</div>
+		<div class="ribbon right_ribbon">
+			<span class="glyphicon glyphicon-unchecked">: </span>
+			<span class="uncompleted">0</span>
+			<span class="span-title glyphicon glyphicon-check">: </span>
+			<span class="completed">0</span>
+		</div>
+		<div class="clear"></div>
+		<div class="todo-container">
+			<div class="todo-background">
+				<input id="new-todo" placeholder="What needs to be done?" />
+				<img src='http://cl.ly/image/18210f180R3u/Screen%20Shot%202013-09-30%20at%2010.13.48%20PM.png' />
+			</div>
+			<ul class="todos-list">
+			<script type="text/template" id="todo-template">
+				<li>
+				<input type='checkbox' class='toggle' <% if (completed == true) { %>checked<% } %> /> 
+				<label <% if (completed == true) { %> class="checked" <% }%> >
+				<%= title %>
+				</label>
+				<button class="destroy"></button>
+				</li>
+			</script>
+			</ul>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+	<script type="text/javascript" src='script.js'></script>
+	
+</body>
+
+</html>

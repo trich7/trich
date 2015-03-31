@@ -1,0 +1,111 @@
+body {
+	background:  url(http://eventsonhand.com/wp-content/uploads/2013/07/blurred-background-10-2000x1250.jpg);
+	background-size: 100% 100%;
+	font-family: 'Special Elite', cursive;
+}
+
+.container {
+	margin-top: 20px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	height: auto;
+	background: url(http://2.bp.blogspot.com/_q2DyIrP9k3M/SwsFqElMMBI/AAAAAAAABgY/3WMzmBY5loI/s1600/386_tile_WatercolorPaper.jpg) repeat;
+}
+
+.title {
+	margin-bottom: 25px;
+	font-size: 4em;
+	color: rgba(0, 0, 0, .5);
+	text-align: center;
+}
+
+p.intro {
+	width: 80%;
+	margin: 0px auto 30px auto;
+}
+
+.news-click {
+	padding: 20px 20px;
+	text-align: center;
+	border-top: 2px dotted rgba(0,0,0,0.3);
+	border-bottom: 2px dotted rgba(0,0,0,0.3);
+}
+
+.news-form {
+	background: url(http://www.wallcg.com/images/2012/11/light-minimalistic-gaussian-blur-blurred-HD-Wallpapers.jpg);
+	background-size: 100% auto;
+	padding: 20px 20px;
+	margin: 20px auto 0px auto;
+	width: 60%;
+	box-shadow: inset 0px -4px 0px rgba(0,0,0,.5), inset 0px 2px 0px rgba(255,255,255,.2), 0px 2px 5px rgba(0,0,0,.4);
+	display: none;
+}
+
+button.open {
+	border: none;
+	padding: 5px 10px;
+	background: #5CAAFC;
+	border-bottom: 2px solid #2F5DF4;
+	border-radius: 2px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+	color: #fff;
+	text-shadow: 0px -1px 0px #2F5DF4;
+	cursor: pointer;
+}
+
+input.newtitle {
+	width: 400px;
+}
+
+textarea.newbody {
+	width: 400px;
+	height: 100px;
+}
+
+button.nm {
+	border: none;
+	padding: 5px 10px;
+	background: #fe6c6c;
+	border-bottom: 2px solid #DB0000;
+	border-radius: 2px;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.8);
+	color: #fff;
+	text-shadow: 0px -1px 0px #DB0000;
+	cursor: pointer;
+}
+
+button.add {
+	border: none;
+	padding: 5px 10px;
+	background: #5CAAFC;
+	border-bottom: 2px solid #2F5DF4;
+	border-radius: 2px;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.8);
+	color: #fff;
+	text-shadow: 0px -1px 0px #2F5DF4;
+	cursor: pointer;
+}
+
+button:focus {
+	outline: none;
+}
+
+h1 {
+	font-family: 'Special Elite', cursive;
+}
+
+.newsfeed {
+	text-align: left;
+	width: 90%;
+	margin: 0px auto;
+}
+
+span.date {
+	color:#fff;
+	text-shadow: 0px -1px 0px rgba(0,0,0,.2);
+	margin: -15px 0px 0px 0px;
+	display: inline-block;
+}
+
+p {
+	margin-bottom:35px;
+}

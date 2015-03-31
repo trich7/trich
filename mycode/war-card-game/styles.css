@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+html, body, div, ul, li {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	background: #aa2c2c; /* Old browsers */
+	background: -moz-linear-gradient(left,  #aa2c2c 0%, #d85252 26%, #5c6e89 68%, #2d3644 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#aa2c2c), color-stop(26%,#d85252), color-stop(68%,#5c6e89), color-stop(100%,#2d3644)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #aa2c2c 0%,#d85252 26%,#5c6e89 68%,#2d3644 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #aa2c2c 0%,#d85252 26%,#5c6e89 68%,#2d3644 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #aa2c2c 0%,#d85252 26%,#5c6e89 68%,#2d3644 100%); /* IE10+ */
+	background: linear-gradient(to right,  #aa2c2c 0%,#d85252 26%,#5c6e89 68%,#2d3644 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa2c2c', endColorstr='#0a0e0a',GradientType=1 ); /* IE6-9 */
+
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.sign {
+	width: 250px;
+	margin: 0px auto;
+	padding: 10px 0px;
+	margin-bottom: 80px;
+	position: relative;
+	margin: 40px auto;
+	color: hsla(0,0%,20%,.5);
+  	font: bold 6em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  	text-align: center;
+  	text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+  	background-color: hsl(0,0%,90%);
+  	box-shadow:
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    hsla(0,0%, 0%,.15) 0 5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.9) 0 -1px 0px 0px; /* outer HL */ 
+  	transition: color .2s;
+  	background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+    linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+    hsl(0,0%,90%) 47%, 
+    hsl(0,0%,78%) 53%,
+    hsl(0,0%,70%)100%);
+}
+
+h1 {
+	width: 100%;
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.5);
+	margin-top: -10px;
+	line-height: 80px;
+	margin: 0px; 
+}
+
+h3 {
+	width: 100%;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.5);
+	font-size: 24px;
+	margin: 0px;
+	line-height: 28px;
+}
+
+h2 {
+	width: 100%;
+	text-align: center;
+	color: rgba(0,0,0,0.4);
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.2);
+}
+
+.half {
+	margin-top: -180px; 
+	width: 50%;
+	padding: 0px 135px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.card-container1 {
+	display: inline;
+	box-shadow: 2px 10px 25px rgba(0,0,0,0.2);
+	min-height: 79px;
+	margin: 0;
+	width: 150px;
+	height: 200px;
+	background: #fff;
+	border-radius: 5px;
+	padding-top: 60px;
+	float: left;
+}
+
+.card-container2 {
+	display: inline;
+	box-shadow: 2px 10px 25px rgba(0,0,0,0.2);
+	min-height: 79px;
+	margin: 0;
+	width: 150px;
+	height: 200px;
+	background: #fff;
+	border-radius: 5px;
+	padding-top: 60px;
+	float: right;
+}
+
+.card-container1 h2 {
+	width: 100%;
+	text-align: center;
+	color: rgb(77, 77, 77);
+	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.2);
+	font-size: 35px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+.card-container1 h4 {
+	width: 100%;
+	text-align: center;
+	color: rgb(77, 77, 77);
+	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.2);
+	font-size: 22px;
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+}
+
+.card-container2 h2 {
+	width: 100%;
+	text-align: center;
+	color: rgb(77, 77, 77);
+	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.2);
+	font-size: 35px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+.card-container2 h4 {
+	width: 100%;
+	text-align: center;
+	color: rgb(77, 77, 77);
+	text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.2);
+	font-size: 22px;
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+}
+
+.rules {
+	margin-top: 90px;
+	padding-bottom: 30px;
+	color: rgba(0,0,0,0.4);
+	width:100%;
+	display: block;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.2);
+	font-size: 16px;
+	margin: 0px;
+	line-height: 28px;
+}
+
+.rules:hover {
+	cursor: pointer;
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.rule-box {
+	width: 400px;
+	margin: 20px auto 0px auto;
+	background: #8A8A8A;
+	padding: 15px 25px;
+	border-top: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	color: #fff;
+	display: none;
+}
+
+.row-centered {
+	text-align: center;
+}
+
+.btn {
+	font-size: 14px;
+	position: relative;
+  	text-align: center;
+	color: hsla(0,0%,20%,.5);
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.5);
+  	background-color: hsl(0,0%,90%);
+  	box-shadow:
+    inset hsla(0,0%,15%, .6) 0 -1px 4px 2px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.5) 0  2px 1px 7px, /* top HL */
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.1) 0  5px 6px 4px; /* outer HL */ 
+  	transition: color .2s;
+	width: 100px;
+  	height: 80px;
+  	border-radius: .5em;
+  	background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+    linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+    hsl(0,0%,90%) 47%, 
+    hsl(0,0%,78%) 53%,
+    hsl(0,0%,70%)100%);
+	margin: 0 auto;
+	border: none;
+}
+
+.btn:hover {
+	color: rgba(255,51,51,0.7);
+	cursor: pointer;
+}
+
+.btn:active {
+  	background-color: hsl(0,0%,10%);
+  	color: rgba(255,51,51,0.7);
+  	box-shadow:
+    inset hsla(0,0%,15%, .6) 0 -1px 5px 3px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.1) 0  2px 1px 7px, /* top HL */
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.1) 0  5px 6px 4px; /* outer HL */ 
+  	transition: color .2s;
+	width: 100px;
+  	height: 80px;
+  	border-radius: .5em;
+  	background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+    linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+    hsl(0,0%,90%) 40%, 
+    hsl(0,0%,78%) 60%,
+    hsl(0,0%,80%)100%);
+	margin: 0 auto;
+	border: none;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.counter1 {
+	color: #fff;
+	box-shadow: 2px 10px 25px rgba(0,0,0,0.2);
+	min-height: 79px;
+	margin: 0 0 0 5px;
+	width: 150px;
+	height: 200px;
+	background: url(http://chetart.com/blog/wp-content/uploads/2012/05/playing-card-back.jpg);
+	border-radius: 5px;
+	padding-top: 60px;
+	background-size: 102% 102%;
+	background-position: -2px -2px;
+	float: left;
+	display: inline;
+}
+
+.counter2 {
+	box-shadow: 2px 10px 25px rgba(0,0,0,0.2);
+	min-height: 79px;
+	margin: 0 5px 0 0;
+	width: 150px;
+	height: 200px;
+	background: url(http://chetart.com/blog/wp-content/uploads/2012/05/playing-card-back.jpg);
+	border-radius: 5px;
+	padding-top: 60px;
+	background-size: 102% 102%;
+	background-position: -2px -2px;
+	float: right;
+}
+
+.counter1 b {
+	display: block;
+	background: #fff;
+	color: #1F3061;
+	padding: 10px 0px;
+	text-align: center;
+	width: 150px;
+	font-size: 16px;
+	margin-top:25px;
+}
+
+.counter2 b {
+	display: block;
+	background: #fff;
+	color: #1F3061;
+	padding: 10px 0px;
+	text-align: center;
+	width: 150px;
+	font-size: 16px;
+	margin-top:25px;
+}

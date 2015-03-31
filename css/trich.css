@@ -1,0 +1,515 @@
+
+.container .brand {
+	color: E6DDC8;
+	}
+	
+.navbar {
+overflow: visible;
+overflow-x: visible;
+overflow-y: visible;
+margin-bottom: 18px;
+}
+	
+a .brand navlogo {
+	height: 50px;
+	width: 253px;
+}
+
+.centerb {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: middle;
+}
+
+.span8 .offset2 .carousel{
+	padding: 60px;
+}
+
+
+body {
+position: relative;
+padding-top: 0px;
+background-image: url('http://i1176.photobucket.com/albums/x329/jakefleming/background_texture1.png');
+background-repeat: repeat;
+}
+
+.header {
+    border-top: 1px solid #fff;
+    background:#ededed;
+    width: 100%;
+    height:auto;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0, .3);
+    box-shadow: 0px 1px 4px rgba(0,0,0, .2);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, .2);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, .2);
+    font-family: Georgia, "Bitstream Charter", serif;
+    font-size: 15px;
+    position: relative;
+}
+
+div.header a {
+    color: #323232;
+    margin: 0px 1% 0px 1%;
+    text-align: center;
+    padding: 46px 10px 5px 10px;
+    text-shadow: 0px 1px 0px #fff;
+    position: relative;
+    border-left: 1px solid rgba(255,255,255,.05);
+    border-right: 1px solid rgba(255,255,255,.05);
+}
+
+div.header a.text:hover{
+    color: #e83d36;
+    background-color:rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0,0,0,0.2);
+    border-left: 1px solid rgba(0,0,0,0.05);
+    border-right: 1px solid rgba(0,0,0,0.05);
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.05);
+}
+
+div.header a.head-img img {
+    width:50px;
+    height:50px;
+}
+
+.hero-unit {
+-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.main-pic {
+    background-image: url(/img/index/main_pic2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 929px;
+    text-align: center;
+}
+
+.main-logo {
+    background-image: url(/img/index/tr_logo.png);
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    top: 32%;
+    left: 11%;
+}
+
+.main-logo:hover {
+    background-image: url(/img/index/tr_logo.png);
+    background-position: 125px 0px;
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    top: 32%;
+    left: 11%;
+}
+
+.main-menu {
+    position: absolute;
+    margin: 5% 5% 0% 52%;
+}
+
+div.main-menu a{
+    background-image: url(/img/index/main_btns.png);
+    background-size: 400px 198px;
+    background-repeat: no-repeat;
+    height: 99px;
+    width: 99px;
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+div.main-menu a.main-btn-1:hover {
+    background-position: 0px -99px;
+}
+
+div.main-menu a.main-btn-2 {
+    background-position: -99px 0px;
+}
+
+div.main-menu a.main-btn-2:hover {
+    background-position: -99px -99px;
+}
+
+div.main-menu a.main-btn-3 {
+    background-position: -201px 0px;
+}
+
+div.main-menu a.main-btn-3:hover {
+    background-position: -201px -99px;
+}
+
+div.main-menu a.main-btn-4 {
+    background-position: -300px 0px;
+}
+
+div.main-menu a.main-btn-4:hover {
+    background-position: -300px -99px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding-left: 755px;
+}
+
+div.footer a {
+    color: #e83d36;
+}
+
+div.footer a:hover {
+    color: #35a895;
+}
+
+.about-titles {
+    text-align: center;
+    width:80%;
+}
+
+.about-text1 {
+    width: 35%;
+    padding-top: 30px;
+    margin-left:10%;
+    display: inline-block;
+    float: left;
+}
+
+.about-text2 {
+    width: 35%;
+    padding-top: 30px;
+    margin-right: 10%;
+    display: inline-block;
+    float: right;
+}
+
+.about-text1 p {
+    text-indent: 15px;
+    text-align: justify;
+}
+
+.about-text2 p {
+    text-indent: 15px;
+    text-align: justify;
+
+}
+
+.about-text1 a {
+    color: #35a895;
+}
+
+.about-text2 a {
+    color: #e83d36;
+}
+
+.carousel_1{
+    height: 400px;
+    width: 600px;
+    box-shadow: 0px 2px 3px rgba(209, 211, 212, 1);
+    -webkit-box-shadow: 0x 2px 3px rgba(209, 211, 212, 1);
+    -moz-box-shadow: 0px 2px 3px rgba(209, 211, 212, 1);
+}
+
+.carousel_2{
+    width: 600px;
+    height: 400px;
+}
+
+.photo-title {
+    width: 100%;
+    text-align: center;
+    margin: 550px auto 50px auto;
+}
+
+.carousel {
+    margin-bottom: 100px;
+}
+
+.logo-carousel {
+    height: 800px;
+}
+
+.company-title {
+    width: 100%;
+    text-align: center;
+    margin: 50px auto 50px auto;
+}
+
+.company-text {
+    width: 50%;
+    padding-top: 30px;
+    display: inline-block;
+    margin:10px 0px 100px 0px;
+}
+
+.company-text p {
+    text-indent: 15px;
+    text-align: justify;
+}
+
+.company-text a {
+    color: #e83d36;
+}
+
+.contact-title {
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+}
+
+.contact-top {
+    background-image: url(/img/contact/contact_top.png);
+    background-size:770px 123px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    margin: 50px 0px -10px 0px;
+    padding: 0px;
+}
+
+.contact-middle {
+    background-image: url(/img/contact/contact_middle.png);
+    background-size:770px 14px;
+    background-repeat: repeat-y;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: -20px 0px 4px 0px;
+    padding: 0px;
+}
+
+.contact-bottom {
+    background-image: url(/img/contact/contact_bottom.png);
+    background-size:770px 69px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    margin: -10px 0px 50px 0px;
+    padding: 0px;
+}
+
+.social-center {
+    width: 100%;
+    text-align: center;
+}
+
+div.social-networks a{
+    background-image: url(/img/contact/social_networks.png);
+    background-size: 684px 121px;
+    background-repeat: no-repeat;
+    height: 59px;
+    width: 59px;
+    display: inline-block;
+    margin: 10px;
+}
+
+div.social-networks a.social-btn-1:hover {
+    background-position: 0px -63px;
+}
+
+div.social-networks a.social-btn-2 {
+    background-position: -62px 0px;
+}
+
+div.social-networks a.social-btn-2:hover {
+    background-position: -62px -63px;
+}
+
+div.social-networks a.social-btn-3 {
+    background-position: -125px 0px;
+}
+
+div.social-networks a.social-btn-3:hover {
+    background-position: -125px -63px;
+}
+
+div.social-networks a.social-btn-4 {
+    background-position: -187px 0px;
+}
+
+div.social-networks a.social-btn-4:hover {
+    background-position: -187px -63px;
+}
+
+div.social-networks a.social-btn-5 {
+    background-position: -250px 0px;
+}
+
+div.social-networks a.social-btn-5:hover {
+    background-position: -250px -63px;
+}
+
+div.social-networks a.social-btn-6 {
+    background-position: -312px 0px;
+}
+
+div.social-networks a.social-btn-6:hover {
+    background-position: -312px -63px;
+}
+
+div.social-networks a.social-btn-7 {
+    background-position: -375px 0px;
+}
+
+div.social-networks a.social-btn-7:hover {
+    background-position: -375px -63px;
+}
+
+div.social-networks a.social-btn-8 {
+    background-position: -438px 0px;
+}
+
+div.social-networks a.social-btn-8:hover {
+    background-position: -438px -63px;
+}
+
+div.social-networks a.social-btn-9 {
+    background-position: -500px 0px;
+}
+
+div.social-networks a.social-btn-9:hover {
+    background-position: -500px -63px;
+}
+
+div.social-networks a.social-btn-10 {
+    background-position: -563px 0px;
+}
+
+div.social-networks a.social-btn-10:hover {
+    background-position: -563px -63px;
+}
+
+div.social-networks a.social-btn-11 {
+    background-position: -625px 0px;
+}
+
+div.social-networks a.social-btn-11:hover {
+    background-position: -625px -63px;
+}
+
+.business-card {
+    text-align: center;
+    width: 40%;
+    height: auto;
+    display: inline-block;
+}
+
+.business-card1 {
+    float: left;
+    display: inherit;
+    width: 49%;
+
+}
+
+.business-card2 {
+    float: left;
+    display: inherit;
+    width: 49%;
+}
+
+.business-card2 p {
+    text-align: left;
+    text-indent: none;
+    font-size: 13px;
+}
+
+.portfolio-title {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.portfolio-menu {
+    width: 100%;
+    text-align: center;
+}
+
+div.portfolio-menu a{
+    background-image: url(/img/portfolio/portfolio_btns.png);
+    background-size: 400px 201px;
+    background-repeat: no-repeat;
+    height: 99px;
+    width: 99px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+div.portfolio-menu a.main-btn-1 {
+    background-position: 2px 0px;
+}
+
+div.portfolio-menu a.main-btn-1:hover {
+    background-position: 2px -101px;
+}
+
+div.portfolio-menu a.main-btn-2 {
+    background-position: -99px 0px;
+}
+
+div.portfolio-menu a.main-btn-2:hover {
+    background-position: -99px -101px;
+}
+
+div.portfolio-menu a.main-btn-3 {
+    background-position: -201px 0px;
+}
+
+div.portfolio-menu a.main-btn-3:hover {
+    background-position: -201px -101px;
+}
+
+div.portfolio-menu a.main-btn-4 {
+    background-position: -303px 0px;
+}
+
+div.portfolio-menu a.main-btn-4:hover {
+    background-position: -303px -101px;
+}
+
+.small-menu {
+    width: 100%;
+    font-family: Georgia, "Bitstream Charter", serif;
+    font-size: 15px;
+    display: inline-block;
+}
+
+div.small-menu a {
+    color: #323232;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+div.small-menu a:hover{
+    color: #e83d36;
+}
+
+
+img.rotate:hover {
+-webkit-animation: spin 0.5s infinite linear;
+-moz-animation: spin 0.5s infinite linear;
+-o-animation: spin 0.5s infinite linear;
+-ms-animation: spin 0.5s infinite linear;
+}
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(360deg);}
+}   

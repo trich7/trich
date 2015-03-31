@@ -1,0 +1,506 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"me",
+				"menu"
+			],
+			[
+				"menu",
+				"menu-toggle"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"h",
+				"min-height"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"c",
+				"cardView"
+			],
+			[
+				"opp",
+				"opp_view"
+			],
+			[
+				"my",
+				"my_view"
+			],
+			[
+				"car",
+				"cardModel"
+			],
+			[
+				"card",
+				"cardModel"
+			],
+			[
+				"op",
+				"opp_view"
+			],
+			[
+				"my_",
+				"my_view"
+			],
+			[
+				"deal",
+				"deal_cards"
+			],
+			[
+				"ha",
+				"half2"
+			],
+			[
+				"de",
+				"deal_cards"
+			],
+			[
+				"con",
+				"convert_value_to_string"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"todos",
+				"todos-list"
+			],
+			[
+				"toggle",
+				"toggleCompleted"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"r",
+				"repeat-y"
+			],
+			[
+				"login",
+				"login-btn"
+			],
+			[
+				"user",
+				"usernameinput"
+			],
+			[
+				"signup",
+				"signup-btn"
+			],
+			[
+				"west",
+				"westlength"
+			],
+			[
+				"chat",
+				"chat1"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"tweet",
+				"tweet-controls"
+			],
+			[
+				"tw",
+				"tweet-compose"
+			],
+			[
+				"m",
+				"middleName"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"i",
+				"inline"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"bor",
+				"border-box"
+			],
+			[
+				"bloc",
+				"inline-block"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"mari",
+				"margin-left"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"border-r",
+				"border-radius"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Tyler/Desktop/trich.me/css/trichnew.css",
+		"/Users/Tyler/Desktop/trich.me/newindex.html",
+		"/Users/Tyler/Desktop/trich.me/mixit/trichjs.js",
+		"/Users/Tyler/Desktop/trich.me/mixit/jquery.mixitup.min.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/war-card-game/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/backbone-todo/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/war-card-game/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/war/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/backbone-todo/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/war/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/backbone-todo/styles.css",
+		"/Users/Tyler/Desktop/devmountain/devmounta.in-www/index.html",
+		"/Users/Tyler/Desktop/devmountain/devmounta.in-www/devmountain.css",
+		"/Users/Tyler/Desktop/devmountain/devmounta.in-www/bootstrap.css",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/DevMountain/devmountain.css",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/tylers-login/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/tylers-login/loggedin.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/tylers-login/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_prototypal_inheritance.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/codepen-loginsignup-clone/server.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/codepen-loginsignup-clone/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/codepen-loginsignup-clone/styles.css",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/codepen-loginsignup-clone/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/data-structures-problem/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/data-structures-problem/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/data-structures-problem/server.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/3-0/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/3-0/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/3-1/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/3-1/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/2-1/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/2-1/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/2-0/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/2-0/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/1-1/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/1-1/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/1-0/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/debugging-exercises/1-0/script.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/DevMountain/employers.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/DevMountain/employeragreement.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/twitter-clone/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/twitter-clone/README.md",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/twitter-clone/styles.css",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/twitter-clone/jquerycopy.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/twitter-clone/jquery.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_functions_and_closure.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_prototype_chain.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_reflection.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_arrays.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_objects.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_numbers.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_strings.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_control_structures.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_assignment.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_truthyness.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_equality.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_operators.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/JavaScript-Koans/topics/about_asserts.js",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/DevMountain/mentors.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/DevMountain/tuition.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/DevMountain/program.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/DevMountain/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/DevMountain/faq.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/DevMountain/apply.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/DevMountain/contact.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/Aboutme/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/Aboutme/aboutme.css",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/Aboutme/aboutmemobile.css",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/svbtle/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/minimalist/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/svbtle/svbtlecopy.css",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/svbtle/svbtle.css",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/minimalist/minimalist.css",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/wikimedia-layout/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/wikimedia-layout/wikimedia.css",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/Floogle/floogle.css",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/Floogle/index.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/brahman/Brahman.html",
+		"/Users/Tyler/Desktop/Dev Mtn Projects/Floogle/index",
+		"/Users/Tyler/Desktop/Bootstrap3.0/index_files/analytics.js",
+		"/Users/Tyler/Desktop/Bootstrap3.0/jquery.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"container",
+			"tv",
+			"li",
+			"h1",
+			"apply-mentor",
+			"apply-w",
+			"padding-left: 15px",
+			"nav",
+			"destro",
+			"response.success",
+			"response.sucess",
+			"boot",
+			"tuition",
+			"two",
+			"tuition",
+			"hov",
+			"animated"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"contact"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "trich.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"jqu",
+				"jquery.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/Dev Mtn Projects/devmtnprojects.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

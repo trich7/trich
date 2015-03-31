@@ -1,0 +1,190 @@
+.open-access {
+	width:100%;
+	background: background: #c6db5a; /* Old browsers */
+	background: url(openbg.png) center center fixed;
+	background: url(openbg.png) center center fixed, -moz-linear-gradient(left,  #c6db5a 0%, #0bab9f 100%); /* FF3.6+ */
+	background: url(openbg.png) center center fixed, -webkit-gradient(linear, left top, right top, color-stop(0%,#c6db5a), color-stop(100%,#0bab9f)); /* Chrome,Safari4+ */
+	background: url(openbg.png) center center fixed, -webkit-linear-gradient(left,  #c6db5a 0%,#0bab9f 100%); /* Chrome10+,Safari5.1+ */
+	background: url(openbg.png) center center fixed, -o-linear-gradient(left,  #c6db5a 0%,#0bab9f 100%); /* Opera 11.10+ */
+	background: url(openbg.png) center center fixed, -ms-linear-gradient(left,  #c6db5a 0%,#0bab9f 100%); /* IE10+ */
+	background: url(openbg.png) center center fixed, linear-gradient(to right,  #c6db5a 0%,#0bab9f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6db5a', endColorstr='#0bab9f',GradientType=1 ); /* IE6-9 */
+	margin: 0px;
+	padding: 100px 0px 100px 0px;
+}
+
+.open-access .container {
+	text-align: center;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,900,700,500);
+
+.open-access h1 {
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color:#fff;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	margin-bottom: 5px;
+}
+
+.open-access h2 {
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color:#fff;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	margin-top: 5px;
+	margin-bottom: 45px;
+}
+
+.open-access a {
+	display: block;
+	width: 20%;
+	text-decoration: none;
+	color: #fff;
+	vertical-align: middle;
+	background: #F68E35;
+	margin: 25px auto 25px auto;
+	text-align: center;
+	padding: 10px 0px;
+	border-bottom: 2px solid #E2792B;
+	border-radius: 5px;
+}
+
+.open-form {
+}
+
+#mc_embed_signup {
+	margin: 0px auto;
+	width: 50%;
+}
+
+#mc_embed_signup h2#mc-title {
+	text-align: center;
+	margin: 0px auto;
+	width: 60%;
+	color: #404041;
+}
+
+#mc_embed_signup input#mc-embedded-subscribe {
+	display: block;
+	width: 200px;
+	text-decoration: none;
+	color: #fff;
+	vertical-align: middle;
+	background: #F68E35;
+	margin: 10px auto 10px auto;
+	text-align: center;
+	padding: 10px 0px;
+	border-bottom: 3px solid #E2792B;
+	height: 60px;
+	font-weight: 100;
+	font-size: 100%;
+	border-radius: 0px;
+	line-height: 40px;
+}
+
+#mc_embed_signup input#mc-embedded-subscribe:hover {
+	background: #f8a966;
+	border-bottom: 3px solid #F68E35;
+}
+
+.summary {
+	width:100%;
+	padding: 80px 0px 80px 0px;
+	text-align: center;
+}
+
+.summary h1 {
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color:#404041;
+	width:60%;
+	margin: 0px auto 80px auto;
+}
+
+.summary hr {
+	border: 1px solid #eee;
+	width: 50%;
+	margin: 0px auto 80px auto;
+}
+
+.summary a {
+	display: block;
+	width: 220px;
+	text-decoration: none;
+	color: #fff;
+	vertical-align: middle;
+	background: #F68E35;
+	margin: 10px auto 10px auto;
+	text-align: center;
+	padding: 10px 0px;
+	border-bottom: 3px solid #E2792B;
+	height: 40px;
+	font-weight: 100;
+	font-size: 100%;
+	border-radius: 0px;
+	line-height: 40px;
+}
+
+.summary b {
+	text-align: left;
+	display: block;
+	width: 70%;
+	margin: 0px auto;
+	font-weight: 400;
+}
+
+.summary p {
+	width: 70%;
+	text-align: left;
+	margin: 30px auto;
+}
+
+.open-pic {
+	padding: 100px 0px;
+	background: url(tute_blur_bg_3.jpg) center;
+	background-size: 100%;
+	background-position: 0px -200px;
+}
+
+.annovar,.machinelearning,.statistical {
+	padding: 70px 0px 70px 0px;
+	text-align: center;
+}
+
+.world,.robust {
+	background: #404041;
+	padding: 70px 0px 70px 0px;
+	text-align: center;
+}
+
+.annovar img,.machinelearning img,.world img {
+	width:50%;
+}
+
+.robust img {
+	width:40%;
+}
+
+h1.highlight-title {
+	color:#fff;
+	width: 40%;
+	padding: 10px;
+	margin: 20px auto;
+	background: #F68E35;
+	border-radius: 25px;
+}
+
+p.highlight-body {
+	width: 50%;
+	margin: 0px auto;
+	text-align: left;
+}
+
+.robust .highlight-body,.world .highlight-body {
+	color: #fff;
+}
+

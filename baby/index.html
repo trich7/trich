@@ -1,0 +1,160 @@
+<html>
+<head>
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.trich.me/baby/">
+  <meta property="og:title" content="Tyler + Nicole - Baby Richards Announcement">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:description" content="Tyler and Nicole are happy to announce Baby Richards, coming august 2014! Visit Baby Richards' site for updates and to say congratulations.">
+  <meta property="og:image" content="http://www.trich.me/baby/share.jpg"/>
+  <link rel="stylesheet" type="text/css" href="baby.css">
+  <link rel="stylesheet" href="flipclock1/css/flipclock.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="flipclock1/js/flipclock/libs/base.js"></script>
+  <script src="flipclock1/js/flipclock/flipclock.js"></script>
+  <script src="flipclock1/js/flipclock/faces/dailycounter.js"></script>
+  <script src="app.js"></script>
+  <script src="video/jquery.videoBG.js"></script>
+  <script type="text/javascript" src="video/assets/script.js"></script>
+  <title>Baby Richards</title>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35081246-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+</head>
+
+<body>
+
+  <div class="updates">
+    <a class="insta" href="http://instagram.com/babyrichards" target="_blank">
+    <span class="insta-text">Follow <b>@babyrichards</b></span>
+    <i class="fa fa-instagram"></i></a>
+  </div>
+
+  <div class="stats-link">
+    <a class="baby-stats" href="#info">
+    <span class="baby-stat-text">Baby Richards' stats</span>
+    <i class="fa fa-signal"></i></a>
+  </div>
+
+  <div class="comment-link">
+    <a class="comment-button" href="http://www.trich.me">
+    <span class="comment-link-text">T.Rich Home</span>
+    <i class="fa fa-home"></i></a>
+  </div>
+
+  <a href="#" class="back-to-top">Back to Top</a>
+
+  <div class="clock-bg">
+    <div class="clockholder">
+      <div class="clock"></div>
+    </div>
+    <div class="dates">
+        <img src="itsagirl.png">
+        <p class="large-font">It's A Girl</p>
+    </div>
+    
+  </div>
+
+   
+    <br>
+
+    <div class="info" id="info">
+      <ul class="stats rounded">
+        <li class="stat1">
+          <h2>Current Weight</h2>
+          <ul>
+            <li class="sub_txt">6.3 lb</li>
+          </ul>
+        </li>
+        <li class="stat2">
+          <h2>Currently the size of a</h2>
+          <ul>
+            <li class="sub_txt">Swiss Chard</li>
+          </ul>
+        </li>   
+        <li class="stat3">
+          <h2>Current Length</h2>
+          <ul>
+            <li class="sub_txt">19.25 in</li>
+          </ul>
+        </li>   
+        <li class="stat4">
+          <h2>Current Activity</h2>
+          <ul>
+            <li class="sub_txt">Fully Developed</li>
+          </ul>
+        </li>   
+      </ul>
+    </div>
+
+    <div class="info">
+      <ul class="stats rounded">
+        <li class="stat1">
+          <h2>Due Date</h2>
+          <ul>
+            <li class="sub_txt">8/2/2014</li>
+          </ul>
+        </li>
+        <li class="stat2">
+          <h2>Gender</h2>
+          <ul>
+            <li class="sub_txt">Girl</li>
+          </ul>
+        </li>   
+        <li class="stat3">
+          <h2>How far along is mama</h2>
+          <ul>
+            <li class="sub_txt">37 weeks</li>
+          </ul>
+        </li>   
+        <li class="stat4">
+          <h2>Current Nickname</h2>
+          <ul>
+            <li class="sub_txt">Baby Richards</li>
+          </ul>
+        </li>   
+      </ul>
+    </div>    
+
+    <br>
+    <br>
+
+  </div>
+
+                <script type="text/javascript">
+                        var clock;
+
+                        $(document).ready(function() {
+
+                                // Grab the current date
+                                var currentDate = new Date();
+
+                                // Set some date in the future. 
+                                var futureDate  = new Date(Date.UTC(2014, 7, 4, -17));
+
+                                // Calculate the difference in seconds between the future and current date
+                                var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+                                // Instantiate a coutdown FlipClock
+                                clock = $('.clock').FlipClock(diff, {
+                                        clockFace: 'DailyCounter',
+                                        countdown: true,
+                                        showSeconds: true
+                                });
+                        });
+                </script>
+</body>
+
+</html>
