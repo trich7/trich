@@ -1,0 +1,122 @@
+.group .row + .row {
+	margin-top: 20px;
+	padding-top: 15px;
+}
+
+.group-stats {
+	width: 100%;
+	margin: 0px auto;
+}
+
+.group-third {
+	width: 33.33333%;
+	padding: 30px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	background: #f9f9f9;
+	margin: 10px 5px;
+}
+
+.group-third h3 {
+	color: #1a232e;
+	font-size: 110%;
+	font-weight: 400;
+	margin-top: 0px;
+}
+
+.meter { 
+	background: #eee;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 5px;
+}
+
+.meter span {
+	display: block;
+	height: 10px;
+	vertical-align: middle;
+	background: #4A87EE;
+	overflow: hidden;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.stats-half {
+	width: 50%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	background: #f9f9f9;
+	margin: 20px auto 0px auto;
+}
+
+.group-half {
+	width: 50%;
+	float: left;
+}
+
+.group-half .member {
+	text-align: left;
+	padding: 0px;
+	background: #fff;
+	margin: 10px auto;
+	border: 1px solid #ecf0f3;
+}
+
+.group-half .member:hover {
+	 border-color: #c0ccd7;
+}
+
+.group-half .member:first-child {
+	margin: 20px auto 10px auto;
+}
+
+.group-half .member:last-child {
+	margin: 10px auto 0px auto;
+}
+
+.group-half .member a {
+	width: 100%;
+	display: block;
+}
+
+.group-half .member a:hover {
+	text-decoration: none;
+}
+
+.group-half .member a img{
+	width: 70px;
+	height: auto;
+}
+
+.group-half .member a span{
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap; 
+    margin: 0px auto;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    padding: 0px 0px 0px 10px;
+}
+
+.group-stats {
+	padding: 20px;
+}

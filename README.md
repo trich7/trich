@@ -1,2 +1,0 @@
-# trich
-trich site

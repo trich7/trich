@@ -1,0 +1,43 @@
+
+
+<ion-nav-view animation="slide-left-right"></ion-nav-view>
+<ion-view title="Task">
+    <ion-content>
+        <div class="container">
+            <div class="add-task">
+                <div class="row task-name">
+                    <label>
+                        Task Name
+                        <input ng-model="task.name">
+                    </label>
+                </div>
+                <hr>
+                <div class="row task-instructions">
+                    <label>
+                        Task Instructions
+                        <textarea ng-model="task.instructions"></textarea>
+                    </label>
+                </div>
+                <hr>
+                <div class="row task-due">
+                    <label>
+                        Task Due Time
+                        <timepicker ng-model="task.due_by" />
+                    </label>
+                </div>
+                <hr>
+                <div class="row add-alarm">
+                    <div class="alarm-button">
+                        <label>
+                            <input type="checkbox" ng-model="task.alert" ng-true-value="1" ng-false-value="0"/><span><i class="fa fa-bell-o"> Alarm</i></span>
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="row add-save">
+                    <button ng-click="createTask()">Save</button>
+                </div>
+            </div>    
+        </div>  
+    </ion-content>
+</ion-view>

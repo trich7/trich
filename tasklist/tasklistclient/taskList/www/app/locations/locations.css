@@ -1,0 +1,190 @@
+.locations {
+	background: #FAFAFA;
+}
+
+.locations-dashboard {
+	width: 100%;
+	margin: 0px auto;
+}
+
+.dashboard-third {
+	width: 33.33333%;
+	padding: 30px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+}
+
+.dashboard-third h3 {
+	color: #1a232e;
+	font-size: 110%;
+	font-weight: 400;
+}
+
+.chart {
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	background: #fff;
+	height: 225px;
+}
+
+.dashboard-third .chart img {
+	width: 95%;
+}
+
+.unfinished-tasks {
+	width: 100%;
+}
+
+.unfinished-tasks tr {
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	background: #fff;
+	display: table-row;
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+.unfinished-tasks tr.spacer {
+	height: 5px;
+}
+
+.unfinished-tasks tr td {
+	padding: 5px 0px;
+}
+
+.unfinished-tasks tr td:first-child {
+	padding: 5px 0px 5px 5px;
+}
+
+.unfinished-tasks tr td:last-child {
+	padding: 5px 5px 5px 0px;
+}
+
+.unfinished-tasks tr span {
+	background: #F2DEDE;
+	margin: -5px 8px -5px -5px;
+	padding: 7px 5px;
+	display: block;
+	height: 100%;
+	text-align: center;
+	font-size: 110%;
+	color: #b94a48;
+}
+
+.unfinished-tasks tr td.task-name {
+	overflow: hidden;
+	max-width: 120px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.unfinished-tasks tr td.unfinished-td-location {
+	font-style: italic;
+	font-size: 90%;
+	text-align: right;
+}
+
+.unfinished-tasks tr i {
+	display: block;
+	height: 100%;
+	text-align: center;
+	font-size: 110%;
+	margin-left: 5px;
+}
+
+.employee-facts {
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	background: #fff;
+	height: 225px;
+	position: relative;
+}
+
+.employee-facts img {
+	width: 75px;
+	height: 75px;
+	border-radius: 100%;
+	margin: 10px auto;
+	border: 1px solid #cccccc;
+}
+
+.employee-facts a.email-employee-button {
+	position: absolute;
+	bottom: 10px;
+	padding: 5px 10px;
+	margin: 0px auto;
+	text-decoration: none;
+	color: #fff;
+	background: #4A87EE;
+	width: 80%;
+	left: 10%;
+	display: block;
+}
+
+.employee-facts a.email-employee-button:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.each-location-a {
+	cursor: pointer;
+}
+
+.each-location-a:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.each-location {
+	border: 1px solid #ecf0f3;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 20px auto;
+}
+
+.each-location:first-child  {
+	margin-top: 30px;
+}
+
+.each-location:hover {
+	 border-color: #c0ccd7;
+}
+
+.each-location .each-location-table {
+	width: 100%;
+}
+
+.each-location .each-location-table td {
+	vertical-align: middle;
+}
+
+.each-location .each-location-table img {
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	margin: 0px auto;
+}
+
+.each-location .each-location-table h2 {
+	font-size: 160%;
+	font-weight: 600;
+	color: #999999;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.each-location .each-location-table h2 span {
+	font-weight: 300;
+	font-size: 75%;
+}
+
+
+
+
+

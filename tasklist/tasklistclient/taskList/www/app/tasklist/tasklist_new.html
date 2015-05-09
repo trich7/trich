@@ -1,0 +1,95 @@
+<ion-view title="New Task List">
+    <ion-nav-bar class="bar-positive"></ion-nav-bar>
+    <ion-content>
+        <div class="container">
+            <div class="left-column-new">
+                <div class="row list-name">
+                    <label>
+                        New Tasklist Name
+                        <input ng-model="tasklist.name" />
+                    </label>
+                </div>
+                <hr>
+                <div class="row trigger">
+                    <!--<label>
+                        Trigger
+                        <select ng-model="trigger">
+                            <option value="date" ng-model="trigger">Date</option>
+                        </select>
+                    </label>-->
+                    <label>
+                        Repeat every
+                        <select ng-options="value for value in defaultData.days_repeat" ng-model="rrule.interval">
+
+                        </select>
+                        {{value}}
+                  
+                        <select ng-model="rrule.freq">
+                            <option value="daily">Day(s)</option>
+                            <option value="weekly">Week(s)</option>
+                            <option value="monthly">Month(s)</option>
+                            <option value="yearly">Year(s)</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="row repeat-on">
+                <!-- WEEKLY -->
+                    <div class="weekly" ng-show="trigger == 'date' && rrule.freq=='weekly'">
+                        <div class="wk-button" ng-repeat="day in rrule.byweekday">
+                            <label>
+                                <input type="checkbox" ng-model="day.selected"><span>{{day.day}}</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- MONTHLY -->
+                    <div class="monthly" ng-show="trigger == 'date' && rrule.freq=='monthly'">
+                        <label>
+                            Day of the Month
+                            <input type="radio" ng-model="rrule.monthrepeat" value="day_of_month">
+                        </label>
+
+                        <label>
+                            Day of the Week
+                            <input type="radio" ng-model="rrule.monthrepeat" value="day_of_week">
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="row from-to">
+                    <label>
+                    Start
+                            <p class="input-group">
+                                <input type="text" ng-click="open($event)" class="form-control" datepicker-popup="{{format}}" ng-model="rrule.start" is-open="datepicker.isopen" min-date="minDate" max-date="'2016-06-22'"  date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                  <span class="input-group-btn"  >
+                                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-calendar"></i></button>
+                                  </span>
+                            </p>
+                    </label>
+                    <label>
+                    End
+                            <p class="input-group">
+                                <input type="text" ng-click="open2($event)" class="form-control" datepicker-popup="{{format}}" ng-model="rrule.end" is-open="datepicker2.isopen" min-date="rrule.start" max-date="'2016-06-22'" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                  <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default" ><i class="glyphicon glyphicon-calendar"></i></button>
+                                  </span>
+                            </p>
+                    </label>
+                </div>
+                <hr>
+                <div class="row rule-text">
+                    <span>Your tasklist occurs:</span>
+                    <p>{{rrule.text}}</p>
+
+                </div>
+                <hr>
+                <div class="row buttons">
+                    <button ng-click="createTaskList(rrule)" ng-show="currentstate  == 'main.newtasklist'">Create</button>
+                    <button ng-click="saveTaskList()" ng-show="currentstate != 'main.newtasklist'">Save</button>
+                </div>
+            </div>
+            <div class="right-column-new">
+                <list-of-tasks tasklist="tasklist"></list-of-tasks>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

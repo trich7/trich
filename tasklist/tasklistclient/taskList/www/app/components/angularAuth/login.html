@@ -1,0 +1,21 @@
+<div id="login-holder">
+    <div id="loginbox">
+        <div id="login-inner" ng-controller="LoginController">
+            <span>Welcome to Tasklist</span>
+            <form ng-submit="submit()">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td><input type="text" class="login-inp" ng-model="username" placeholder="Username"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" class="login-inp" ng-model="password" placeholder="Password"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" class="submit-login"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<ion-view title="User Profile">
+    <ion-content>
+    	<div class="container">
+    		<div class="user-profile">
+    			<label>
+    			View Tasks for : 
+		        <date-picker-dropdown date-model="profile.date"></date-picker-dropdown>
+		        </label>
+
+		        <ion-list ng-repeat="tasklist in tasksToDo">
+		        	<hr>
+	                <ion-item ng-repeat="task in tasklist.tasks">
+	                    {{task.name}}<span ng-if="task.completed"><i class="fa fa-check"></i></span>
+	                </ion-item>
+	            </ion-list>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,9 +1,9 @@
 === Plugin Name ===
-Contributors: bravenewcode, duanestorey, dalemugford
+Contributors: bravenewcode, duanestorey, dalemugford, mkuplens
 Tags: wptouch, iphone, ipod, bravenewcode, mobile, android, blackberry, smartphone, responsive, design, mobile plugin, ios, mobile theme
 Requires at least: 3.6
-Stable tag: 3.4.3
-Tested up to: 3.9.1
+Stable tag: 3.6
+Tested up to: 4.0
 License: GPLv2
 
 Create a slick mobile WordPress website with just a few clicks.
@@ -18,9 +18,9 @@ The theme also includes the ability for visitors to switch between the theme on 
 
 **Now Available: WPtouch Pro + BraveNewCloud**
 
-With 4 themes and 3 new extensions installed & updated right from our new BraveNewCloud service, it's the best WPtouch yet!
+With six themes and three new extensions installed & updated right from our new BraveNewCloud service, it's the best WPtouch yet!
 
-For more information visit [WPtouch.com](http://www.wptouch.com/?utm_campaign=wptouch-front-readme&utm_medium=web&utm_source=wordpressdotorg "WPtouch.com").
+For more information visit [WPtouch.com](http://www.wptouch.com/?utm_campaign=wptouch-front-readme&utm_medium=web&utm_source=wordpressdotorg "WPtouch.com").  You may also be interested in [Response](http://wpresponse.com/), a new BraveNewCode service that seamlessly integrates with WPtouch.
 
 'WPtouch' & ’WPtouch Pro' are trademarks of BraveNewCode Inc.
 
@@ -39,6 +39,87 @@ For more information visit [WPtouch.com](http://www.wptouch.com/?utm_campaign=wp
 11. WPtouch admin - Menu Setup
 
 == Changelog ==
+
+= Version 3.6 (November 6, 2014) =
+
+* Added: New extension: Advanced Type (Pro Only)
+* Added: Ability to ignore tags when identifying related content
+* Added: Ability to have WPtouch work on specific URLs/pages only
+* Added: Ability to have the featured slider show the latest posts from a specific post type
+* Added: Prose theme now allows site owners to disable use of featured images as header background on single posts (Pro Only)
+* Added: Yelp option for footer social links
+* Changed: Improved appearance of Web App Notice Message on the WordPress login page (Pro Only)
+* Changed: When viewing a WordPress media gallery item, the item's post parent is linked
+* Changed: Share links adjust order and icon placement when the site is in an RTL language
+* Changed: Updated add to home scripts to latest version (3.0.8)
+* Fixed: WPtouch Pro can now disable certain Jetpack components that duplicate WPtouch functionality (Related Posts, Sharing Buttons, Like Box)
+
+
+= Version 3.5.3 (October 10th, 2014) =
+
+* Added: Startup Screen support for iPhone 6 and 6+ (Pro only)
+* Fixed: Removed php warnings
+* Fixed: Minor issues with our new MobileStore theme for WooCommerce (Pro only)
+* Added: New theme MobileStore (eCommerce theme for WooCommerce!) (Pro only)
+* Added: Option to turn off menu output on the Open homepage (Pro only)
+* Added: Open theme now supports custom post type content (Pro only)
+* Added: Optional comment support to Prose (Pro only)
+* Changed: Homescreen icon now recommends 180x180 (best size for iPhone 6, 6+, backwards compatible)
+* Changed: Better home-template.php support in themes
+* Changed: Updated FastClick module to 1.0.3 (fixes form issues)
+* Changed: Theme browser now shows theme demos instead of screenshots for WebKit-based browsers (Safari, Chrome)
+* Changed: Cache timing tweaked to allow filtering of cache behaviour in Infinity Cache (Pro only)
+* Changed: If enabled in WPtouch, comment block is shown on pages only when they either accept comments and/or have comments to display
+* Changed: Better SSL support w/ protocol-independent font and jQuery loading + image embeds
+* Fixed: An issue where Check All/None for menu items would affect all theme menus
+* Fixed: Better off-canvas menu support in Prose, Bauhaus and MobileStore
+* Fixed: Prevent Web App Mode from getting stuck in a logout loop (Pro only)
+* Fixed: Theme preview images causing SSL notices when viewing admin over HTTPS
+* Fixed: Prevent mobile switch link from appearing in Web App Mode when pages are loading from cache (Pro only)
+* Fixed: Bookmark icon not being used when bookmarking on iPad (Pro only)
+
+= Version 3.4.11 (September 24th, 2014) =
+
+* Changed: Backup file information, excluded license information and obfuscated filenames
+
+= Version 3.4.10 (September 23rd, 2014) =
+
+* Fixed: Potential security issue with URLs in comment forms
+
+= Version 3.4.9 (September 5th, 2014) =
+
+* Fixed: Some customers reported ongoing issues with MIME-type detection for uploaded images.
+* Updated: Compatibility with WordPress 4.0
+
+= Version 3.4.8 (August 28th, 2014) =
+
+* Fixed: Issue with uploading image files on servers that don’t advertise MIME type
+* Updated: Compatibility with WordPress 4.0
+
+= Version 3.4.7 (August 27th, 2014)
+
+* Changed: Only images (png, jpg, gif, svg) will be accepted for home screens and icons.
+* Fixed: Issue with internal version upgrade notification
+
+= Version 3.4.6 (August 26th, 2014) =
+
+* Fixed: Featured slider showing selected pages
+* Fixed: Display of comment count at top of posts in Bauhaus after comments have closed
+* Fixed: Shortcodes are now processed properly in the Multi-ads extension advertising code (Pro only)
+* Fixed: RTL issues with related posts
+* Changed: Now allow mid-content advertisements in Multi-ads (Pro only)* Fixed: Display of comment count at top of posts in Bauhaus after comments have closed
+
+= Version 3.4.5 (August 7th, 2014) =
+
+* Fixed: Comments remain visible after commenting has been closed for a given post/page
+
+* Fixed: Custom Post Type module sometimes showed an error when searches were performed
+* Fixed: Featured Slider now shows posts from custom post types enabled for mobile display
+* Fixed: An issue which could cause the switch link to not store a cookie remembering the user's choice
+* Fixed: Bauhaus with off-canvas and fly-in login form issue
+* Changed: Improved off-canvas menu in Bauhaus
+* Changed: Reduced Custom Post Type module memory consumption
+* Note: Security issue found by Securi was already fixed in the previous release (3.4.3)
 
 = Version 3.4.3 (July 12th, 2014) =
 
@@ -961,7 +1042,6 @@ For more information visit [WPtouch.com](http://www.wptouch.com/?utm_campaign=wp
 * More style enhancements and tweaks, fixes
 * Switched to Snoopy from CURL for the admin news section (thanks to Joost de Valk (yoast.com)
 
-
 = Version 1.1 =
 
 * The ability to disable advanced javascript effects (fixes effects not working for some, speeds up the load time considerably)
@@ -985,7 +1065,6 @@ For more information visit [WPtouch.com](http://www.wptouch.com/?utm_campaign=wp
 
 * Initial release
 
-
 == Installation ==
 
 = WordPress 3.5+ =
@@ -996,6 +1075,8 @@ Once you have installed and activated WPtouch, visit the admin page via the side
 = User Manual =
 
 You can download the user manual from within the WPtouch administration panel.  It contains information on how to configure WPtouch.
+
+For more information visit [WPtouch.com](http://www.wptouch.com/?utm_campaign=wptouch-front-readme&utm_medium=web&utm_source=wordpressdotorg "WPtouch.com").
 
 == Frequently Asked Questions ==
 
@@ -1017,24 +1098,10 @@ We even automatically put a little snippet of code into your current desktop the
 
 No. The entire *WPtouch* footprint is small. In fact, it should reduce load, because of its streamlined approach to serving optimized content to mobile visitors. It was designed to be as lightweight and speedy as possible, while still serving your site's content in a richly presented way, sparing no essential features like search, login, categories, tags, comments etc.
 
+For more information visit [WPtouch.com](http://www.wptouch.com/?utm_campaign=wptouch-front-readme&utm_medium=web&utm_source=wordpressdotorg "WPtouch.com").
+
 == Upgrade Notice ==
 
 = 3.1.1 =
 
 This is an entirely new release, everyone! It’s completely different… and new : )
-
-= 1.9.8.2 =
-
-An issue with WordPress multisite was addressed
-
-= 1.9.8.1 =
-
-Potential security issues were fixed
-
-= 1.9.8 =
-
-Includes important administration panel updates
-
-= 1.9.7.1 =
-
-Includes a new POT file for Brazilian Portuguese

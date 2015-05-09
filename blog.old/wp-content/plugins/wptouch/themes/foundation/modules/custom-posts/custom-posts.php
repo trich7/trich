@@ -103,13 +103,14 @@ function wptouch_register_theme_custom_post_types() {
 
 function wptouch_custom_posts_add_to_search( $post_types ) {
 	$settings = foundation_get_settings();
-	$custom_post_types = array_flip( get_option( 'wptouch_custom_post_types' ) );
-
-	if ( !is_array( $custom_post_types )  ) {
-		$custom_post_types = array();
+	$custom_post_types = get_option( 'wptouch_custom_post_types' );
+	if ( $custom_post_types ) {
+		if ( is_array( $custom_post_types )  ) {
+			foreach( $custom_post_types as $type => $object ) {
+				$post_types[] = $type;
+			}
+		}
 	}
-
-	$post_types = array_merge( $post_types, $custom_post_types );
 
 	return $post_types;
 }
@@ -130,7 +131,6 @@ function wptouch_custom_posts_get_list( $remove_defaults = true ) {
 function wptouch_custom_posts_default_settings( $defaults ) {
 	$defaults->enable_custom_post_types = false;
 	$defaults->enabled_custom_post_types = '';
-	$defaults->show_custom_post_taxonomy = false;
 
 	return $defaults;
 }
@@ -168,14 +168,6 @@ function wptouch_custom_posts_render_theme_settings( $page_options ) {
 					'checkbox',
 					'enable_custom_post_types',
 					__( 'Enable custom post-type support', 'wptouch-pro' ),
-					'',
-					WPTOUCH_SETTING_BASIC,
-					'1.0'
-				),
-				wptouch_add_setting(
-					'checkbox',
-					'show_custom_post_taxonomy',
-					__( 'Show custom post taxonomy', 'wptouch-pro' ),
 					'',
 					WPTOUCH_SETTING_BASIC,
 					'1.0'

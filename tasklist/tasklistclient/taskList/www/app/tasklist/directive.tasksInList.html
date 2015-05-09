@@ -1,0 +1,25 @@
+
+
+    <h2>Tasks in this tasklist</h2>
+
+<div class="row">
+    <table>
+        <tbody>
+            <tr style="border-bottom: 1px #ddd solid;">
+                <th>Name</th>
+                <th>Alert</th>
+            </tr>
+        	<tr ng-repeat="task in tasklist.tasks">
+        		<td class="td-left" ng-click="editTask(task)">{{task.name}}</td>
+        		<td class="td-right" ng-click="toggleAlarm(task)">
+                    <ion-toggle
+                            toggle-class="toggle-positive"
+                            ng-model="task.alert"
+                            >
+                            </ion-toggle>
+                </td>
+        	</tr>
+        </tbody>
+    </table>
+</div>
+<button ui-sref="main.tasksadd({tasklist_id:tasklist.id})"><i class="fa fa-plus"></i></button>

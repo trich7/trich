@@ -1,0 +1,47 @@
+
+<ion-view title="{{tasklist.name}}">
+
+    <ion-content>
+    <div class="container">
+        <div class="row rule-text">
+            <!--<span>This tasklist will occur <strong>{{rrule.freq}}</strong></span>-->
+            <p>This tasklist will occur {{rrule.text}}</p>
+            <button ui-sref="main.edittasklist({id:tasklist.id})"><i class="fa fa-edit"></i></button>
+        </div>
+        <div class="row column-contain">
+            <div class="left-column">
+                <div class="assigned-to">
+                    <h2>Users assigned to this tasklist</h2>
+
+                        <ion-list >
+                            <ion-item ng-repeat="user in tasklist.assigned_users" ui-sref="main.userprofile({id:user.id})" >
+                                {{user.username}}
+                                <span class="ion-minus-circled" ng-click="removeAssignation(user.id,$index)"></span>
+                            </ion-item>
+                        </ion-list>
+                    <button class="assign-user" ng-click="showassigner=!showassigner" ng-hide="showassigner"><i class="fa fa-plus"></i></button>
+                    <div class="row assign-toggle" ng-show="showassigner">
+                        <hr>
+                        <div class="row assign-labels">Select a User</div>
+                        <div class="row">
+                            <select ng-options="user.id as user.username for user in users" ng-model="assign.user_id"></select>
+                        </div>
+                        <div class="row assign-labels">Start & End</div>
+                        <div class="row">
+                            <date-picker-dropdown date-model="assign.start">To</date-picker-dropdown>
+                            <date-picker-dropdown date-model="assign.end" ></date-picker-dropdown>
+                        </div>
+                        <button class="datepicker-btn" ng-click="assignUser(assign.user_id,assign.start,assign.end)">Assign User</button>
+                        <button class="datepicker-btn" ng-click="showassigner=!showassigner">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <list-of-tasks tasklist="tasklist"></list-of-tasks>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    </ion-content>
+</ion-view>

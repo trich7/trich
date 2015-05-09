@@ -1,0 +1,151 @@
+.store .row + .row {
+	margin-top: 20px;
+	padding-top: 15px;
+}
+
+.store-stats {
+	width: 100%;
+	margin: 0px auto;
+}
+
+.store-third {
+	width: 33.33333%;
+	padding: 30px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	background: #f9f9f9;
+	margin: 10px 5px;
+}
+
+.store-third h3 {
+	color: #1a232e;
+	font-size: 110%;
+	font-weight: 400;
+	margin-top: 0px;
+}
+
+.meter { 
+	background: #eee;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 5px;
+}
+
+.meter span {
+	display: block;
+	height: 10px;
+	vertical-align: middle;
+	background: #4A87EE;
+	overflow: hidden;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.stats-half {
+	width: 50%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	background: #f9f9f9;
+	margin: 20px auto 0px auto;
+}
+
+.management {
+	padding: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #ecf0f3;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 20px auto;
+	display: block;
+}
+
+.management:hover {
+	 border-color: #c0ccd7;
+}
+
+.management h2 {
+	display: block;
+	text-align: center;
+	font-size: 130%;
+	padding: 5px;
+	background: #ecf0f3;
+	color: #404041;
+	margin: -15px -15px 0px -15px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	font-weight: normal;
+}
+
+.management .management-half {
+	width: 50%;
+	float: left;
+}
+
+.management .management-half .member {
+	text-align: left;
+	padding: 0px;
+	background: #fff;
+	margin: 10px auto;
+	border: 1px solid #ecf0f3;
+}
+
+.management .management-half .member:hover {
+	 border-color: #c0ccd7;
+}
+
+.management .management-half .member:first-child {
+	margin: 20px auto 10px auto;
+}
+
+.management .management-half .member:last-child {
+	margin: 10px auto 0px auto;
+}
+
+.management .management-half .member a {
+	width: 100%;
+	display: block;
+}
+
+.management .management-half .member a:hover {
+	text-decoration: none;
+}
+
+.management .management-half .member a img{
+	width: 50px;
+	height: auto;
+}
+
+.management .management-half .member a span{
+	overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap; 
+    margin: 0px auto;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    padding: 0px 0px 0px 10px;
+}
+
+.group-stats {
+	padding: 20px;
+}

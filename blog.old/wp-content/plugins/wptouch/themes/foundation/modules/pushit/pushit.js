@@ -8,9 +8,7 @@
 var prefix = (function() {
 	var styles = window.getComputedStyle( document.documentElement, '' ),
 	vendor = ( Array.prototype.slice.call( styles ).join( '' ).match( /-(moz|webkit|ms)-/ ) || ( styles.OLink === '' && ['', 'o'] ) )[1];
-	return {
-		css: '-' + vendor + '-'
-	}
+	return { css: '-' + vendor + '-' }
 })();
 
 ( function( $ ){
@@ -30,45 +28,46 @@ var prefix = (function() {
 			menuWidth:	 		240,						// Menu width (default is 240px)
 			menuSpeed:	 		330,						// Speed of the menu transistion, in milliseconds
 			bezierCurve:		'.290, .050, .140, .870',	// Menu transistion bezier
-			pushed: 			false
+			pushed: 			false,
+			lastAspect:         false                       // Store last aspect ratio
 		}, options );
 
 		var hasOverflowScroll = typeof( jQuery( 'body' )[0].style['-webkit-overflow-scrolling'] ) !== 'undefined';
-
 		if ( hasOverflowScroll ) {
 			jQuery( 'body' ).addClass( 'has-overflow-scroll' );
 		}
+
+		// Add the overlay div
+		settings.body.append( '<div id="pushit-overlay"></div>' );
+		var pushitOverlay = jQuery( '#pushit-overlay' );
 
 		// Setup default positioning and width
 		settings.leftMenu.addClass( 'pushit-left' )
 			.css( 'left', '-' + settings.menuWidth + 'px' )
 			.css( 'width', settings.menuWidth + 'px' );
 
+		// Setup default positioning and width
 		settings.rightMenu.addClass( 'pushit-right' )
-			.css( 'left', settings.viewportWidth + 'px' )
-			.css( 'width', settings.menuWidth + 'px' );
+			.css( 'width', settings.menuWidth + 'px' )
+			.css( 'left', settings.viewportWidth + 'px' );
 
+		// Make sure it's positioned relative & add the transition CSS for slide prep
 		settings.container
 			.css( 'position', 'relative' )
-			.css( prefix.css+'transform', 'translateZ(0)' )
 			.css( prefix.css+'transition', prefix.css+'transform .'+settings.menuSpeed+'s cubic-bezier('+settings.bezierCurve+')' );
 
-		// Setup the animations
+		settings.lastAspect = getAspect();
+
+		// Add the transition CSS for slide  prep
 		jQuery( '.pushit' )
-			.css( prefix.css+'transform', 'translateZ(0)' )
 			.css( prefix.css+'transition', prefix.css+'transform .'+settings.menuSpeed+'s cubic-bezier('+settings.bezierCurve+')' );
 
-		// Before we start, append the site overlay div, and check for overflow scrolling
-		jQuery( settings.body ).prepend( '<div id="site-overlay"><!-- appended by Pushit --></div>' );
-		var siteOverlay = jQuery( '#site-overlay' );
-
-		// Update the position of right menus if they exist
-		if ( settings.rightMenu.length ) {
-			var currentWindow = jQuery( window );
-			currentWindow.resize( function(){
-				settings.viewportWidth = currentWindow.width();
-				settings.rightMenu.css( 'left', settings.viewportWidth );
-			}).resize();
+		function getAspect() {
+			if ( jQuery( window ).width() < jQuery( window ).height() ) {
+				return 'portrait';
+			} else {
+				return 'landscape';
+			}
 		}
 
 		function whichPushIt( clicked ){
@@ -85,68 +84,101 @@ var prefix = (function() {
 			return direction;
 		}
 
-		// For the site overlay when open
-		function preventTouch( e ){ e.preventDefault(); }
-
-		// Stop the TouchMove on the overlay
-		function disableTouch( e ){
-			siteOverlay.bind( 'touchmove', preventTouch, false );
+		function cleanUpPushit(){
+			setTimeout( function(){
+				// Cleanup memory usage!
+				settings.container
+					.css( prefix.css+'transform', '' )
+					.css( 'position', '' )
+					.css( 'overflow', '' )
+					.css( 'height', '' );
+				pushitOverlay.css( 'z-index', '-1' );
+			}, settings.menuSpeed + 300 );
 		}
 
-		// Re-enable touchmove on the overlay area
-		function enableTouch( e ){
-			siteOverlay.unbind( 'touchmove' );
+		// Close menu when clicking container
+		function pushitCloseListener() {
+			pushitOverlay.one( 'click.pushit touchmove.pushit', function( e ){
+				e.preventDefault();
+				e.stopImmediatePropagation();
+				togglePushIt( settings.pushed );
+				pushitOverlay.off( 'click.pushit touchmove.pushit' );
+			}).css( 'z-index', '99' );
+		}
+
+		function disableTouchMove(){
+			settings.container.on( 'touchmove', function( e ){
+//			    e.preventDefault();
+			});
+		}
+
+		function enableTouchMove(){
+//			settings.container.off( 'touchmove' );
 		}
 
 		function togglePushIt( clicked ){
 			settings.pushed = clicked;
 			direction = whichPushIt( clicked );
 			var side = ('.pushit-' + direction );
+			var activeSide = jQuery( side );
 			jQuery( side ).toggleClass( 'pushit-open' );
-
 			// Left Menus
 			// Open
-			if ( side == '.pushit-left' && jQuery( side ).hasClass( 'pushit-open' ) ) {
-				disableTouch();
+			if ( side == '.pushit-left' && activeSide.hasClass( 'pushit-open' ) ) {
+				disableTouchMove();
+				pushitCloseListener();
+				settings.container
+					.height( window.innerHeight )
+					.css( 'position', 'fixed' )
+					.css( 'overflow', 'hidden' );
+
 				if ( prefix.css != '' ){
-					jQuery( side ).css( prefix.css+'transform', 'translate3d(' + settings.menuWidth + 'px, 0, 0)' );
+					activeSide.css( prefix.css+'transform', 'translate3d(' + settings.menuWidth + 'px, 0, 0)' );
 					settings.container.css( prefix.css+'transform', 'translate3d(' + settings.menuWidth + 'px, 0, 0)' );
 				} else {
-					jQuery( side ).animate( { left: '0' }, settings.menuSpeed );
+					activeSide.animate( { left: '0' }, settings.menuSpeed );
 					settings.container.animate( { left: settings.menuWidth }, settings.menuSpeed );
 				}
 			// Closed
-			} else if ( side == '.pushit-left' && !jQuery( side ).hasClass( 'pushit-open' ) ) {
-				enableTouch();
+			} else if ( side == '.pushit-left' && !activeSide.hasClass( 'pushit-open' ) ) {
+				enableTouchMove();
 				if ( prefix.css != '' ){
-					jQuery( side ).css( prefix.css+'transform', 'translate3d(0, 0, 0)' );
+					activeSide.css( prefix.css+'transform', 'translate3d(0, 0, 0)' );
 					settings.container.css( prefix.css+'transform', 'translate3d(0, 0, 0)' );
 				} else {
-					jQuery( side ).animate( { left: '-' + settings.menuWidth }, settings.menuSpeed );
+					activeSide.animate( { left: '-' + settings.menuWidth }, settings.menuSpeed );
 					settings.container.animate( { left: '0' }, settings.menuSpeed );
 				}
+				cleanUpPushit();
 			}
 			// Right Menus
 			// Open
 			if ( side == '.pushit-right' && jQuery( side ).hasClass( 'pushit-open' ) ) {
-				disableTouch();
+				disableTouchMove();
+				pushitCloseListener();
+				settings.container
+					.height( window.innerHeight )
+					.css( 'position', 'fixed' )
+					.css( 'overflow', 'hidden' );
+
 				if ( prefix.css != '' ){
-					jQuery( side ).css( prefix.css+'transform', 'translate3d(-' + settings.menuWidth + 'px, 0, 0)' );
+					activeSide.css( prefix.css+'transform', 'translate3d(-' + settings.menuWidth + 'px, 0, 0)' );
 					settings.container.css( prefix.css+'transform', 'translate3d(-' + settings.menuWidth + 'px, 0, 0)' );
 				} else {
-					jQuery( side ).animate( { left: settings.viewportWidth - settings.menuWidth }, settings.menuSpeed );
+					activeSide.animate( { left: settings.viewportWidth - settings.menuWidth }, settings.menuSpeed );
 					settings.container.animate( { left: '-' + settings.menuWidth }, settings.menuSpeed );
 				}
 			// Closed
 			} else if ( side == '.pushit-right' && !jQuery( side ).hasClass( 'pushit-open' ) ) {
-				enableTouch();
+				enableTouchMove();
 				if ( prefix.css != '' ){
-					jQuery( side ).css( prefix.css+'transform', 'translate3d(0, 0, 0)' );
+					activeSide.css( prefix.css+'transform', 'translate3d(0, 0, 0)' );
 					settings.container.css( prefix.css+'transform', 'translate3d(0, 0, 0)' );
 				} else {
-					jQuery( side ).animate( { left: settings.viewportWidth }, settings.menuSpeed );
+					activeSide.animate( { left: settings.viewportWidth }, settings.menuSpeed );
 					settings.container.animate( { left: '0' }, settings.menuSpeed );
 				}
+				cleanUpPushit();
 			}
 
 			settings.container.toggleClass( whichPushIt( clicked ) );
@@ -154,17 +186,30 @@ var prefix = (function() {
 			settings.container.toggleClass( settings.containerClass );
 		}
 
-		// Toggle menu
-		settings.menuBtn.click( function( e ) {
-			e.preventDefault();
-			e.stopImmediatePropagation();
-			target = '#' + jQuery( this ).attr( 'data-menu-target' );
-			togglePushIt( jQuery( target ).parent() );
-		});
-		// Close menu when clicking site overlay
-		siteOverlay.on( 'click', function(){
-			togglePushIt( settings.pushed );
+		// Close the menu on a rotate— no need to have the browser choke on render
+		var currentWindow = jQuery( window );
+		currentWindow.resize( function(){
+			if ( settings.lastAspect != getAspect() ) {
+				settings.lastAspect = getAspect();
+
+				if ( jQuery( '.pushit-active' ).length ) {
+					pushitOverlay.trigger( 'click' );
+					cleanUpPushit();
+				}
+
+				if ( settings.rightMenu.length ) {
+					settings.viewportWidth = currentWindow.width();
+					settings.rightMenu.css( 'left', settings.viewportWidth + 'px' );
+				}
+			}
 		});
 
+		// Toggle menu
+		settings.menuBtn.on( 'click.pushit-button', function( e ) {
+			e.preventDefault();
+			e.stopImmediatePropagation();
+			menuTarget = '#' + jQuery( this ).attr( 'data-menu-target' );
+			togglePushIt( jQuery( menuTarget ).parent() );
+		});
 	}
 })( jQuery );

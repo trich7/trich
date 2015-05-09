@@ -1,8 +1,8 @@
 === Simple Image Widget ===
 Contributors: blazersix, bradyvercher
 Tags: image widget, widget, media, media manager, sidebar, image, photo, picture
-Requires at least: 3.3
-Tested up to: 3.9
+Requires at least: 3.5
+Tested up to: 4.0
 Stable tag: trunk
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -27,7 +27,9 @@ Blazer Six took over development and maintenance of Simple Image Widget with ver
 
 = Translation Credits =
 
+* Finnish (fi) - Tomi Mäenpää [v4.1.1]
 * French (fr_FR) - Alexandre Sadowski [v4.0.1]
+* Serbo-Croation (sr_RS) - [Borisa Djuraskovic](http://www.webhostinghub.com/) [v4.1.2]
 
 == Installation ==
 
@@ -74,6 +76,20 @@ The widget uses the core function `wp_get_attachment_image()` to display the ima
 2. The widget after selecting an image.
 
 == Changelog ==
+
+= 4.1.2 =
+* Added Serbo-Croation translation.
+
+= 4.1.1 =
+* Added Finnish translation.
+* Prevent a notice about non-existent title when adding a widget in the Customizer in debug mode.
+
+= 4.1.0 =
+* Added the ability to hide widget fields.
+* Added a field to insert HTML classes on the text link. Hidden by default.
+* Removed "the_content" filter from widget text to prevent other plugins from appending content.
+* Renamed /scripts to /js and /styles to /css.
+* Improved handling of fields that have been removed in child widgets.
 
 = 4.0.2 =
 * Fixed the reference to the widget's parent class to prevent an error.
