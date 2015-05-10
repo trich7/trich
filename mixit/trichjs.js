@@ -53,7 +53,7 @@ $(document).ready(function(){
                 $('.myventures').hide("slow");
                 $('.aboutme').hide("slow");
             });
-            $('#logos').onclick(function(){
+            /*$('#logos').onclick(function(){
                 $('#Grid').mixitup('filter','logo');
             });
             $('#web').onclick(function(){
@@ -76,7 +76,7 @@ $(document).ready(function(){
             });
             $('#mycode').onclick(function(){
                 $('#Grid').mixitup('filter','mycode');
-            });
+            });*/
 
 });
 
