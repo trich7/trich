@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>trich.me</title>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/trichnew.css">
@@ -26,16 +26,24 @@
     </script>
 </head>
 <body>
+<video autoplay loop poster="trichwebsite.jpg" id="bgvid">
+    <source src="img/trichwebsite.mp4" type="video/mp4">
+</video>
     <nav>
         <div class="containerz">
-            <span id="menu-toggle" class="menu-tab icon-reorder"></span>
+            <span id="menu-toggle" class="fa menu-tab fa-reorder"></span>
+            <ul id="main-menu" class="animate fadeIndown">
+                <li class="button filter anim50" id="about" data-filter="about">About</li>
+                <li class="button filter anim50" id="ventures" data-filter="ventures">Ventures</li>
+                <li class="button filter anim50" id="contact" data-filter="contact">Contact</li>
+                <a href="http://www.trich.me/blog/" target="_blank"><li class="button filter anim50" id="blog">Blog</li></a>
+        </ul>
             <center>
-            <a class="head-img" href="index.html"><img class="rotate" src="/img/header_img.png"></a>
+            <a class="head-img" href="index.html"><img class="rotate" src="img/header_img.png"></a>
             </center>
-            <a class="babyrich" href="http://www.trich.me/baby/"><img src="/img/babybottle.png">We're having a baby!</a>
         </div>
     </nav>
-    <div class="containerz">
+    <!--<div class="containerz">
         <ul id="menu" class="animate fadeIndown">
             <li class="button filter anim150 active" id="all" data-role="button" data-filter="all">View All</li>
             <li class="button filter anim50" id="about" data-filter="about">About</li>
@@ -49,167 +57,241 @@
             <a href="http://www.trich.me/blog/" target="_blank"><li class="button filter anim50" id="blog">Blog</li></a>
             <li class="button filter anim50" id="contact" data-filter="contact">Contact</li>
         </ul>
+    </div>-->
+    <div class="centered-content">
+        <h1 class="maintitle">Hi, I'm <span id="changeText">T.Rich</span></h1>
+        <div class="aboutme">
+            <ul class="lists">
+                <li class="mix">
+                    <a data-toggle="modal" href="#about-tyluur"><img src="img/tyler.jpg">
+                    <span>Tyler</span></a>
+                </li>
+                <li class="mix">
+                    <a data-toggle="modal" href="#about-ty-fam"><img src="img/about_ty_fam.jpeg">
+                    <span>Tyler's Family</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="myventures">
+            <ul class="lists">
+                <li class="mix">
+                    <a data-toggle="modal" href="#venture-garish"><img src="img/ventures_garish.png">
+                    <span>Garish Clothing</span></a>
+                </li>
+                <li class="mix">
+                    <a data-toggle="modal" href="#about-trich-design"><img src="img/about_trich_design.png">
+                    <span>T.Rich Design</span></a>
+                </li>
+                <li class="mix">
+                    <a data-toggle="modal" href="#venture-matchmate"><img src="img/ventures_matchmate.png">
+                    <span>MatchMate</span></a>
+                </li>
+                <li class="mix">
+                    <a data-toggle="modal" href="#web-tute"><img src="img/web_tute.png">
+                    <span>Tute Genomics</span></a>
+                </li>
+                <li class="mix">
+                    <a data-toggle="modal" href="#venture-layover"><img src="img/ventures_layover.png">
+                    <span>Logo Layover</span></a>
+                </li>
+                <li class="mix">
+                    <a data-toggle="modal" href="#venture-devmtn"><img src="img/ventures_devmtn.png">
+                    <span>DevMountain</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="contactme">
+            <ul class="lists">
+                <li class="mix">
+                    <a href="https://www.facebook.com/tylerjordanrichards" target="_blank"><img src="img/contact_fb.png"></a>
+                </li>
+                <li class="mix">
+                    <a href="https://twitter.com/trich_" target="_blank"><img src="img/contact_twitter.png"></a>
+                </li>
+                <li class="mix">
+                    <a href="https://plus.google.com/117090771680273647495/" target="_blank"><img src="img/contact_google.png"></a>
+                </li>
+                <li class="mix">
+                    <a href="https://www.linkedin.com/in/tylerjordanrichards" target="_blank"><img src="img/contact_linked.png"></a>
+                </li>
+                <li class="mix">
+                    <a href="http://www.youtube.com/user/tylerjordanrichards" target="_blank"><img src="img/contact_youtube.png"></a>
+                </li>
+                <li class="mix">
+                    <a href="http://dribbble.com/trich" target="_blank"><img src="img/contact_dribbble.png"></a>
+                </li>
+                <li class="mix">
+                    <a href="http://instagram.com/t_rich" target="_blank"><img src="img/contact_instagram.png"></a>
+                </li>
+                <li class="mix">
+                    <a href="https://github.com/trich7" target="_blank"><img src="img/contact_github.png"></a>
+                </li>
+                <li class="mix">
+                    <a href="http://www.pinterest.com/tylerjordanrich/" target="_blank"><img src="img/contact_pinterest.png"></a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="containerz">
+    <!--<div class="containerz">
         <ul id="Grid">
             <li class="mix about" data-filter="about">
-                <a data-toggle="modal" href="#about-tyluur"><img src="/img/about_tyler.png"></a>
+                <a data-toggle="modal" href="#about-tyluur"><img src="img/about_tyler.png"></a>
                 <span>About Tyler</span>
             </li>
             <li class="mix about">
-                <a data-toggle="modal" href="#about-ty-fam"><img src="/img/about_ty_fam.jpeg"></a>
+                <a data-toggle="modal" href="#about-ty-fam"><img src="img/about_ty_fam.jpeg"></a>
                 <span>Tyler's Family</span>
             </li>
             <li class="mix about ventures">
-                <a data-toggle="modal" href="#about-trich-design"><img src="/img/about_trich_design.png"></a>
+                <a data-toggle="modal" href="#about-trich-design"><img src="img/about_trich_design.png"></a>
                 <span>T.Rich Design</span>
             </li>
             <li class="mix logo">
-                <a data-toggle="modal" href="#logo-lime"><img src="/img/logo_lime.png"></a>
+                <a data-toggle="modal" href="#logo-lime"><img src="img/logo_lime.png"></a>
                 <span>Lime Productions</span>
             </li>
             <li class="mix logo">
-                <a data-toggle="modal" href="#logo-leia"><img src="/img/logo_leia.png"></a>
+                <a data-toggle="modal" href="#logo-leia"><img src="img/logo_leia.png"></a>
                 <span>Leia, Inc.</span>
             </li>
             <li class="mix logo">
-                <a data-toggle="modal" href="#logo-times7"><img src="/img/logo_times7.png"></a>
+                <a data-toggle="modal" href="#logo-times7"><img src="img/logo_times7.png"></a>
                 <span>Times 7</span>
             </li>
             <li class="mix logo">
-                <a data-toggle="modal" href="#logo-camp4"><img src="/img/logo_camp4.png"></a>
+                <a data-toggle="modal" href="#logo-camp4"><img src="img/logo_camp4.png"></a>
                 <span>Camp4 Provo</span>
             </li>
             <li class="mix logo">
-                <a data-toggle="modal" href="#logo-solar"><img src="/img/logo_solar.png"></a>
+                <a data-toggle="modal" href="#logo-solar"><img src="img/logo_solar.png"></a>
                 <span>Solarmatrix</span>
             </li>
             <li class="mix logo">
-                <a data-toggle="modal" href="#logo-hungry"><img src="/img/logo_hungry.png"></a>
+                <a data-toggle="modal" href="#logo-hungry"><img src="img/logo_hungry.png"></a>
                 <span>Hungry Planet Express</span>
             </li>
             <li class="mix logo">
-                <a data-toggle="modal" href="#logo-real-music"><img src="/img/logo_real_music.png"></a>
+                <a data-toggle="modal" href="#logo-real-music"><img src="img/logo_real_music.png"></a>
                 <span>Real Music</span>
             </li>
             <li class="mix logo">
-                <a data-toggle="modal" href="#logo-nutramaxx"><img src="/img/logo_nutramaxx.png"></a>
+                <a data-toggle="modal" href="#logo-nutramaxx"><img src="img/logo_nutramaxx.png"></a>
                 <span>NutraMaxx</span>
             </li>
             <li class="mix web">
-                <a data-toggle="modal" href="#web-marketware"><img src="/img/web_marketware.png"></a>
+                <a data-toggle="modal" href="#web-marketware"><img src="img/web_marketware.png"></a>
                 <span>Marketware</span>
             </li>
             <li class="mix web">
-                <a data-toggle="modal" href="#web-matchmate"><img src="/img/web_matchmate.png"></a>
+                <a data-toggle="modal" href="#web-matchmate"><img src="img/web_matchmate.png"></a>
                 <span>MatchMate</span>
             </li>
             <li class="mix web">
-                <a data-toggle="modal" href="#web-trippy"><img src="/img/web_trippy.png"></a>
+                <a data-toggle="modal" href="#web-trippy"><img src="img/web_trippy.png"></a>
                 <span>Trippy Clothing</span>
             </li>
             <li class="mix web">
-                <a data-toggle="modal" href="#web-tute"><img src="/img/web_tute.png"></a>
+                <a data-toggle="modal" href="#web-tute"><img src="img/web_tute.png"></a>
                 <span>MyGene</span>
             </li>
             <li class="mix web">
-                <a data-toggle="modal" href="#web-location"><img src="/img/web_location.png"></a>
+                <a data-toggle="modal" href="#web-location"><img src="img/web_location.png"></a>
                 <span>Locatour</span>
             </li>
             <li class="mix web">
-                <a data-toggle="modal" href="#web-boomstartup"><img src="/img/web_boomstartup.png"></a>
+                <a data-toggle="modal" href="#web-boomstartup"><img src="img/web_boomstartup.png"></a>
                 <span>BoomStartup</span>
             </li>
             <li class="mix mobile">
-                <a data-toggle="modal" href="#mobile-matchmate"><img src="/img/mobile_matchmate.jpg"></a>
+                <a data-toggle="modal" href="#mobile-matchmate"><img src="img/mobile_matchmate.jpg"></a>
                 <span>MatchMate</span>
             </li>
             <li class="mix mobile">
-                <a data-toggle="modal" href="#venture-layover"><img src="/img/ventures_layover.png"></a>
+                <a data-toggle="modal" href="#venture-layover"><img src="img/ventures_layover.png"></a>
                 <span>Logo Layover</span>
             </li>
             <li class="mix print">
-                <a data-toggle="modal" href="#print-blom"><img src="/img/print_blom.png"></a>
+                <a data-toggle="modal" href="#print-blom"><img src="img/print_blom.png"></a>
                 <span>Blom International</span>
             </li>
             <li class="mix print">
-                <a data-toggle="modal" href="#print-byu"><img src="/img/print_byu_women.png"></a>
+                <a data-toggle="modal" href="#print-byu"><img src="img/print_byu_women.png"></a>
                 <span>BYU Women in Business</span>
             </li>
             <li class="mix print">
-                <a data-toggle="modal" href="#print-boomposter"><img src="/img/print_poster.png"></a>
+                <a data-toggle="modal" href="#print-boomposter"><img src="img/print_poster.png"></a>
                 <span>BoomStartup Poster</span>
             </li>
             <li class="mix print">
-                <a data-toggle="modal" href="#print-businesscards"><img src="/img/print_solar.png"></a>
+                <a data-toggle="modal" href="#print-businesscards"><img src="img/print_solar.png"></a>
                 <span>Business Cards</span>
             </li>
             <li class="mix print">
-                <a data-toggle="modal" href="#print-tute"><img src="/img/print_tute.png"></a>
+                <a data-toggle="modal" href="#print-tute"><img src="img/print_tute.png"></a>
                 <span>Tute Genomics Brochures</span>
             </li>
             <li class="mix clothing">
-                <a data-toggle="modal" href="#clothing-train"><img src="/img/clothing_train.png"></a>
+                <a data-toggle="modal" href="#clothing-train"><img src="img/clothing_train.png"></a>
                 <span>Train Hard Fight Easy</span>
             </li>
             <li class="mix contact">
-                <a href="https://www.facebook.com/tylerjordanrichards" target="_blank"><img src="/img/contact_fb.png"></a>
+                <a href="https://www.facebook.com/tylerjordanrichards" target="_blank"><img src="img/contact_fb.png"></a>
             </li>
             <li class="mix contact">
-                <a href="https://twitter.com/trich_" target="_blank"><img src="/img/contact_twitter.png"></a>
+                <a href="https://twitter.com/trich_" target="_blank"><img src="img/contact_twitter.png"></a>
             </li>
             <li class="mix contact">
-                <a href="https://plus.google.com/117090771680273647495/" target="_blank"><img src="/img/contact_google.png"></a>
+                <a href="https://plus.google.com/117090771680273647495/" target="_blank"><img src="img/contact_google.png"></a>
             </li>
             <li class="mix contact">
-                <a href="https://www.linkedin.com/in/tylerjordanrichards" target="_blank"><img src="/img/contact_linked.png"></a>
+                <a href="https://www.linkedin.com/in/tylerjordanrichards" target="_blank"><img src="img/contact_linked.png"></a>
             </li>
             <li class="mix contact">
-                <a href="http://www.youtube.com/user/tylerjordanrichards" target="_blank"><img src="/img/contact_youtube.png"></a>
+                <a href="http://www.youtube.com/user/tylerjordanrichards" target="_blank"><img src="img/contact_youtube.png"></a>
             </li>
             <li class="mix contact">
-                <a href="http://dribbble.com/trich" target="_blank"><img src="/img/contact_dribbble.png"></a>
+                <a href="http://dribbble.com/trich" target="_blank"><img src="img/contact_dribbble.png"></a>
             </li>
             <li class="mix contact">
-                <a href="http://instagram.com/t_rich" target="_blank"><img src="/img/contact_instagram.png"></a>
+                <a href="http://instagram.com/t_rich" target="_blank"><img src="img/contact_instagram.png"></a>
             </li>
             <li class="mix contact">
-                <a href="https://github.com/trich7" target="_blank"><img src="/img/contact_github.png"></a>
+                <a href="https://github.com/trich7" target="_blank"><img src="img/contact_github.png"></a>
             </li>
             <li class="mix contact">
-                <a href="http://www.pinterest.com/tylerjordanrich/" target="_blank"><img src="/img/contact_pinterest.png"></a>
+                <a href="http://www.pinterest.com/tylerjordanrich/" target="_blank"><img src="img/contact_pinterest.png"></a>
             </li>
             <li class="mix ventures">
-                <a data-toggle="modal" href="#venture-matchmate"><img src="/img/ventures_matchmate.png"></a>
+                <a data-toggle="modal" href="#venture-matchmate"><img src="img/ventures_matchmate.png"></a>
                 <span>MatchMate</span>
             </li>
             <li class="mix ventures">
-                <a data-toggle="modal" href="#venture-devmtn"><img src="/img/ventures_devmtn.png"></a>
+                <a data-toggle="modal" href="#venture-devmtn"><img src="img/ventures_devmtn.png"></a>
                 <span>DevMountain</span>
             </li>
             <li class="mix ventures">
-                <a data-toggle="modal" href="#venture-layover"><img src="/img/ventures_layover.png"></a>
+                <a data-toggle="modal" href="#venture-layover"><img src="img/ventures_layover.png"></a>
                 <span>Logo Layover</span>
             </li>
             <li class="mix ventures clothing">
-                <a data-toggle="modal" href="#venture-garish"><img src="/img/ventures_garish.png"></a>
+                <a data-toggle="modal" href="#venture-garish"><img src="img/ventures_garish.png"></a>
                 <span>Garish Clothing</span>
             </li>
             <li class="mix mycode">
-                <a href="/mycode/backbone-todo" target="_blank"><img src="/img/mycode_todo.png"></a>
+                <a href="/mycode/backbone-todo" target="_blank"><img src="img/mycode_todo.png"></a>
                 <span>Todo Code Project</span>
             </li>
             <li class="mix mycode">
-                <a href="/mycode/newsfeed-start" target="_blank"><img src="/img/mycode_newsfeed.png"></a>
+                <a href="/mycode/newsfeed-start" target="_blank"><img src="img/mycode_newsfeed.png"></a>
                 <span>News Feed Code Project</span>
             </li>
             <li class="mix mycode">
-                <a href="/mycode/war-card-game" target="_blank"><img src="/img/mycode_war.png"></a>
+                <a href="/mycode/war-card-game" target="_blank"><img src="img/mycode_war.png"></a>
                 <span>War Game Code Project</span>
             </li>
         </ul>
 
-    </div>
+    </div>-->
 
     <div class="modal fade" id="about-ty-fam">
         <div class="modal-dialog">
@@ -218,19 +300,10 @@
                     <h4 class="modal-title">My Family</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_about_ty_fam.jpg"> 
+                    <img src="img/family.jpg"> 
                 </div>
                 <div class="modal-body">
-                    I am married to the best wife of all time, Nicole Louise Richards. <a href="/baby">We are expecting</a> our first baby girl August 2014.
-                    </br>
-                    </br>
-                    In every aspect of the word Nicole is every man's dream. She loves to cook, and her <a href="http://pinterest.com/nicolouiserich/" target="_blank">Pinterest recipes board</a> can back that up. She has the biggest heart you'll ever see. She loves to organize and clean everything and anything. Then on top of all of that, she is a hard worker.
-                    </br>
-                    </br>
-                    Her roots are placed in St.George, Ut where she grew up, and because of it she loves the heat. Her family takes a trip to <a href="http://www.youtube.com/watch?v=jGu2DlC1aG8" target="_blank">Lake Powell</a> every year and she loves every second. She loves to lay in the sun and do typical girly things. Nicole's addiction is shopping online and she is famously known for her quote "It's just so easy!"
-                    </br>
-                    </br>
-                    She is almost always the amusing one, especially to her husband, by <a href="http://www.youtube.com/watch?v=NDVAvBlfBtI&amp;feature=player_embedded" target="_blank">trying new things</a> and always being in a good mood. Nicole loves traveling as well! Her two top places are <a href="http://www.youtube.com/watch?v=TPxSWbnAc_w" target="_blank">Cancun</a> and her beloved <a href="http://www.youtube.com/watch?v=iAByiCX__3k" target="_blank">New York</a>. She has big dreams of living in big city some day, but first she wants to start a family. Some call it baby hungry, but she calls it "an anxious mother".
+                    Tyler married Nicole in 2011. Avyn, Tyler's oldest and only child, was born in 2014. They live in Vineyard Utah, the best kept secret in the State. You can read more about Tyler's family life on his wife's blog <a href="http://www.nicolelouiserichards.com/" target="_blank">here</a>.
                 </div>
                 <div class="modal-footer">
                     <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -245,19 +318,12 @@
                     <h4 class="modal-title">About ME - Tyler Richards</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_about_tyler.jpg"> 
+                    <img src="img/modal_about_tyler.jpg"> 
                 </div>
                 <div class="modal-body">
-                    I like to think of myself as a dogged entrepreneur, but most that know me say I am a man of many riveting faces. I graduated in Business Management from BYU in Provo, Ut. My schmoozing over the teachers only worked in high school so college was a different story.  Although I am a practicing <a href="http://www.lds.org" target="_blank">Mormon</a>, I have tried to pursue a professional gangsta rapping career. After things didn't work out, I tried my luck at a <a href="http://www.youtube.com/watch?v=Y44Ma2lauis" target="_blank">surfing career</a> (again, things didn't work out). I would say my favorite pass times are ballin' it up and <a href="http://www.youtube.com/watch?v=arSm_afgLhg&amp;feature=plcp" target="_blank">Rookie dog</a>.
-                    </br>
-                    </br>
-                    My love for design and the web started back in West Seattle as a child. Over the years I have tried many attempts to perfecting my love for art. Sadly it has come with many failures, but on the upside, I can always bring up that I won my 5th grade poster contest.
-                    </br>
-                    </br>
-                    I am super uper fond of traveling and hope to make enough change in my pocket to take <a href="https://twitter.com/nicolouiserich" target="_blank">the one I love</a> all over the world. I was married on April 23, 2011 and I am currently madly in love with her.
-                    </br>
-                    </br>
-                    I live in Provo, Ut, but soon to be Vineyard Utah. My days are filled with working on my <a href="http://devmounta.in" target="_blank">current startup</a>, that I know to be the next big thing, and juggling every other aspect of ,y 'larger-than-life' life. I love social networking (favorite is <a href="https://twitter.com/trich_" target="_blank">twitter</a>) and I'm a member to every social site...seriously. That stems from my love for people. If you see me, give me a high five because I will deliver! I hope to meet <a href="http://www.youtube.com/watch?v=9bZkp7q19f0" target="_blank">PSY</a> and Russell Wilson some day. But other than all of the above abnormal things, I am just a regular guy.
+                    <p>As an entrepreneur, Tyler has had his hand in the tech world since college. Tyler naturally gravitated to the tech industry through his love of code and front-end development. He successfully sold a previous dating/matchmaking startup to a Microsoft-backed company in the summer of 2013. Tyler has created products and companies that help better the industry that they pertain to, and he has brought that expertise to DevMountain.</p>
+                    <p>Tyler Richards is co-founder of DevMountain, an industry-leading code school nestled in the heart of the Intermountain West. Founded by fellow coders, Tyler and his team love sharing their craft to empower the next wave of programmers and entrepreneurs. Now with 60 employees and over 400 graduates from the program, Tyler leads business and marketing efforts at DevMountain.</p>
+                    <p>Originally from Seattle WA, Tyler moved to Provo, UT to attend BYU, where he majored in Business Administration with an emphasis in Entrepreneurship. Tyler was recently named to Peak Venture’s &#147;The Peak 100&#148; listing their top entrepreneurs in Utah and surrounding areas.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -272,16 +338,13 @@
                     <h4 class="modal-title">About T.Rich Design</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_about_tyler.jpg"> 
+                    <img src="img/modal_about_tyler.jpg"> 
                 </div>
                 <div class="modal-body">
-                    T.Rich Design was started by Tyler Richards back in 2005, when Tyler first created designs and slapped them on to t-shirts. People like them enough that Tyler thought to do more than just t-shirts. T.Rich design brings creativity, confidence, and straight swagger to any project. T.Rich Design makes websites, but we don't stop there - from websites to print materials, or ads to graphic design. Everything is crafted with modern design techniques and attention to detail.
-                    </br>
-                    </br>
-                    T.Rich Design is named after it's only employee, Tyler Richards. Tyler was born in Seattle, WA and raised in Provo, UT. He went to High School at Timpview High School in Provo, Utah and then studied Design and Entrepreneurship at Brigham Young University. Tyler found that his passion is to create. Whether it is a new design, website, style, or even a growing business.
-                    </br>
-                    </br>
-                    T.Rich Design has taken design to the next level, and there is a list of of reputable cliental as proof. T.Rich Design, like Tyler, loves to create. <a href="/contact.html" target="_blank">Contact</a> Tyler and T.Rich Design.
+                    <p><b>2005-2012</b></p>
+                    <p>T.Rich Design was started by Tyler back in 2005 when Tylers love for art into the digital world. Tyler couldn't stop drawing through out the years of his youth and by the time he entered high school those skills were transfered into technical tools like Corel Draw and the Adobe Suite. Over the years Tyler molded with times of software and web and started to teach himself front-end development.</p>
+                    <p>As Tyler honed his skills and began to take on contracted work, T.Rich Design was formed.</p>
+                    <p>T.Rich Design is named after Tyler's high school nickname, given to him from a high school football teammate. T.Rich Design's past clients include BYU, MarketWare, Camp 4, and many others.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -296,7 +359,7 @@
                     <h4 class="modal-title">Lime Productions Logo</h4>
                 </div>
                 <div class="modal-picture" style="background:#eee; padding: 30px; box-sizing:border-box;">
-                    <img src="/img/modal_logo_lime.png"> 
+                    <img src="img/modal_logo_lime.png"> 
                 </div>
                 <div class="modal-body">
                     Lime Productions is a video production company ran out of Salt Lake City Utah.
@@ -317,7 +380,7 @@
                     <h4 class="modal-title">Leia Health App</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_logo_leia.png"> 
+                    <img src="img/modal_logo_leia.png"> 
                 </div>
                 <div class="modal-body">
                     Leia is a womens weight loss app found on Android and iOS.
@@ -338,7 +401,7 @@
                     <h4 class="modal-title">Times 7 Logo</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_logo_times7.png"> 
+                    <img src="img/modal_logo_times7.png"> 
                 </div>
                 <div class="modal-body">
                     Times 7 is a race timing system used in marathons, motocross, and bike races. The majority of their work is within road bike races. 
@@ -359,7 +422,7 @@
                     <h4 class="modal-title">Camp4 Logo</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_logo_camp4.png"> 
+                    <img src="img/modal_logo_camp4.png"> 
                 </div>
                 <div class="modal-body">
                     Camp 4 is a high tech co-working space located in Provo, UT. The idea is based on Camp 4 at Yosemite, a camp where the world's best climbers would gather to innovate and work together to overcome climbing obstacles. Camp 4 emulates that innovative atmosphere but translated for the business world. 
@@ -380,7 +443,7 @@
                     <h4 class="modal-title">Solarmatrix Logo</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_logo_solar.png"> 
+                    <img src="img/modal_logo_solar.png"> 
                 </div>
                 <div class="modal-body">
                     Solarmatrix is a passionate and innovative solar power company specialising in the engineering of commercial large scale solar energy systems and in the wholesale of high quality photovoltaic components.
@@ -401,7 +464,7 @@
                     <h4 class="modal-title">Hungry Planet Express Logo</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_logo_hungry.png"> 
+                    <img src="img/modal_logo_hungry.png"> 
                 </div>
                 <div class="modal-body">
                     Hungry Planet Cafe is a casual, quick service and take out restaurant that specializes in American comfort food made healthy.
@@ -425,7 +488,7 @@
                     <h4 class="modal-title">Real Music Logo</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_logo_real_music.png"> 
+                    <img src="img/modal_logo_real_music.png"> 
                 </div>
                 <div class="modal-body">
                     Real Music is a music website for both artists and music lovers similar to myspace.com. 
@@ -446,7 +509,7 @@
                     <h4 class="modal-title">NutraMaxx Logo</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_logo_nutramaxx.png"> 
+                    <img src="img/modal_logo_nutramaxx.png"> 
                 </div>
                 <div class="modal-body">
                     NutraMaxx is a vitamin/supplement company. They sell vitamins and supplements to people around the US. 
@@ -467,7 +530,7 @@
                     <h4 class="modal-title">Marketware Web App</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_web_marketware.png"> 
+                    <img src="img/modal_web_marketware.png"> 
                 </div>
                 <div class="modal-body">
                     Marketware is a referral development market growth solution for healthcare organizations. This is accomplished through combining custom software and consulting with the purpose of uniting unique processes with a healthcare CRM tool.
@@ -491,7 +554,7 @@
                     <h4 class="modal-title">MatchMate Website Design</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_web_matchmate.png"> 
+                    <img src="img/modal_web_matchmate.png"> 
                 </div>
                 <div class="modal-body">
                     MatchMate is bringing online dating to the 21st Century with a relationship process that works. They concentrate on dating friends of friends (meeting someone through someone you know). MatchMate has some awesome features and the end result is a combination of all the best dating apps.
@@ -515,7 +578,7 @@
                     <h4 class="modal-title">Trippy Website Design</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_web_trippy.png"> 
+                    <img src="img/modal_web_trippy.png"> 
                 </div>
                 <div class="modal-body">
                     Trippy Clothing is an online clothing store offering a unique shopping experience for the hip crowd. They congregate the coolest styles of clothing in one place.
@@ -533,16 +596,16 @@
         <div class="modal-dialog">
                 <div class="modal-header">
                     <button type="button" class="close icon-remove" data-dismiss="modal" aria-hidden="true"></button>
-                    <h4 class="modal-title">MyGene Website Design</h4>
+                    <h4 class="modal-title">Tute Genomics</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_web_tute.png"> 
+                    <img src="img/tute.png"> 
                 </div>
                 <div class="modal-body">
-                    MyGene is a mobile app made by <a href="http://tutegenomics.com/" target="_blank">Tute Genomics</a>. The app is a tool to analyze your personal Human Genome. I only helped to design the website.
-                    </br>
-                    </br>
-                    MyGene has yet to release, but Tute Genomics wanted a landing page for it. You can see it and my work <a href="http://mygene.co/" target="_blank">here</a>.
+                    <p><b>2013-2014</b></p>
+                    <p>After the sale of Tyler's first company in the summer of 2013 Tyler joined a medical genomics startup called <a href="http://tutegenomics.com/" target="_blank">Tute Genomics</a>. As the very 1st employee and Director of Business Development Tyler helped Tute Genomics change the way businesses and consumers digest genomic data.</p>
+                    <p>Tute Genomics uses big data technology and years of research to create an application to analyze human genomes faster and more accurately than other competing services. As Tyler jumped head first into the medical world, working with pharmaceutical behemoths, PhD and Doctors it taught him a new side of tech.</p>
+                    <p>Tute has most recently raised an A round of funding of over $3M. Tyler left Tute Genomics when he founded DevMountain in 2014.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -557,7 +620,7 @@
                     <h4 class="modal-title">Locatour Website Design</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_web_location.png"> 
+                    <img src="img/modal_web_location.png"> 
                 </div>
                 <div class="modal-body">
                     Locatour was a website where users could track their travels. It was a personal travel diary. It has since shutdown.
@@ -575,7 +638,7 @@
                     <h4 class="modal-title">BoomStartup Website Design</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_web_boomstartup.png"> 
+                    <img src="img/modal_web_boomstartup.png"> 
                 </div>
                 <div class="modal-body">
                     BoomStartup is tech startup accelerator. Meaning BoomStartup helps great tech ideas find an optimal business model, create a minimal viable product that is revenue-ready, execute into revenue generation, and then make connections to customers and investors.
@@ -596,7 +659,7 @@
                     <h4 class="modal-title">MatchMate Mobile App</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_mobile_matchmate.jpg"> 
+                    <img src="img/modal_mobile_matchmate.jpg"> 
                 </div>
                 <div class="modal-body">
                     This is a pure HTML 5 app I worked on for MatchMate, Inc. Check out their site <a href="http://matchmate.me/" target="_blank">here</a>. You can see the mobile work I did by visiting <a href="http://matchmate.me/" target="_blank">their site</a> on your mobile phone.
@@ -617,7 +680,7 @@
                     <h4 class="modal-title">Blom International Print</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_print_blom.png"> 
+                    <img src="img/modal_print_blom.png"> 
                 </div>
                 <div class="modal-body">
                     Blom International is a diamond wholesaler. They focus on engagement rings, but sell multiple types of diamond jewelry to consumers and businesses. They are well known in the diamond industry.
@@ -638,7 +701,7 @@
                     <h4 class="modal-title">BYU Women in Business Print</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_print_byu.png"> 
+                    <img src="img/modal_print_byu.png"> 
                 </div>
                 <div class="modal-body">
                     Brigham Young University's Women in Business group decided that they were going to create a campaign to show that women in business are average, every-day women with passions and hobbies.
@@ -659,7 +722,7 @@
                     <h4 class="modal-title">BoomStartup Poster</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_print_boomposter.png"> 
+                    <img src="img/modal_print_boomposter.png"> 
                 </div>
                 <div class="modal-body">
                     Once a year <a href="http://www.boomstartup.com" target="_blank">BoomStartup</a> holds an event where the tech companies in the program present to investors from around the country. 
@@ -683,13 +746,13 @@
                     <h4 class="modal-title">Business Cards</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_print_businesscards1.png"> 
+                    <img src="img/modal_print_businesscards1.png"> 
                 </div>
                 <div class="modal-body">
                     I have made countless business cards. Here are just a couple examples. Long live the business card.
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_print_businesscards2.png"> 
+                    <img src="img/modal_print_businesscards2.png"> 
                 </div>
                 <div class="modal-footer">
                     <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -704,7 +767,7 @@
                     <h4 class="modal-title">Tute Genomics Brochures</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_print_tute.png"> 
+                    <img src="img/modal_print_tute.png"> 
                 </div>
                 <div class="modal-body">
                     Tute Genomics has a web application that has the ability to analyze and annotate whole human genomes. Basically they can tell you what's what in your DNA.
@@ -728,7 +791,7 @@
                     <h4 class="modal-title">Train Hard Fight Easy</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_clothing_train.png"> 
+                    <img src="img/modal_clothing_train.png"> 
                 </div>
                 <div class="modal-body">
                     Train Hard Fight easy is in the business of selling clothing to sports fans who embrace the "train hard fight easy" way. 
@@ -749,19 +812,15 @@
                     <h4 class="modal-title">MatchMate.Me</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_venture_matchmate.png"> 
+                    <img src="img/modal_venture_matchmate.png"> 
                 </div>
                 <div class="modal-body">
-                    MatchMate is a company I started back in 2011. The business model of the company has pivoted a couple times. But the idea has always been the same. MatchMate has set out to conquer the task of relationship discovery. Not to be confused with your normal boring dating site. 
-                    </br>
-                    </br>
-                    MatchMate was a web, mobile, and facebook app to research, rate, and review you latest crush. MatchMate was acquired back in fall of 2013 by a competitor named <a href="http://matchmate.me/" target="_blank">LikeBright</a> 
-                    </br>
-                    </br>
-                    The idea is based on friends of friends dating so it is the safest and best way to meet people online. LikeBright has since taken down the site to integrate it into their own.
-                    </br>
-                    </br>
-                    <a href="http://www.matchmate.me" target="_blank">Check it out for yourself</a>. Because it is fun for singles, but also those who are taken. It truly is a new twist on a dating app, that is truly for everyone.
+                    <p><b>2011-2013</b></p>
+                    <p>MatchMate was a web, mobile, and facebook dating applications to research, rate, and review you latest crush. MatchMate was acquired back in fall of 2013 by a Microsoft backed company named (at the time) <a href="http://matchmate.me/" target="_blank">LikeBright</a>.</p>
+                    <p>
+                    MatchMate was started by himself and two partners in 2011. Starting off as a Facebook Application, the business model pivoted a couple times ultimately finding strong footings in the mobile application industry. The idea has always been the same; Matchmaking. Tyler started MatchMate with his co-founders to set out to conquer the task of relationship discovery.</p>
+                    <p>The idea was based on friends of friends dating so it was the safest and most effective way to meet people online.</p>
+                    <p>LikeBright has since <a href="http://www.matchmate.me" target="_blank">taken down the site</a> to integrate it into their own suite of tools.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -773,19 +832,16 @@
         <div class="modal-dialog">
                 <div class="modal-header">
                     <button type="button" class="close icon-remove" data-dismiss="modal" aria-hidden="true"></button>
-                    <h4 class="modal-title">DevMounta.in</h4>
+                    <h4 class="modal-title">DevMountain</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_venture_devmtn.png"> 
+                    <img src="img/modal_venture_devmtn.png"> 
                 </div>
                 <div class="modal-body">
-                    <a href="http://www.devmounta.in" target="_blank">DevMountain</a> is an after-hours, intense, coding school where students are trained and mentored by industry experts. DevMtn focuses on hands-on learning over old-school lectures. Anyone can code, everyone should.
-                    </br>
-                    </br>
-                    It was started by myself and 3 other superb gentlemen because we saw the demand of web developers only increasing, and the pool of talent getting thinner. Especially in Utah. DevMtn places students with well known partnered companies such as Money Desktop, Property Solutions, and Bluehost.
-                    </br>
-                    </br>
-                    DevMountain is located in the Camp4 work space in Provo, Ut. The course is a 12 week crash course where the teachers take you from literally knowing nothing to becoming a world-class junior developer. You can check out the site <a href="http://www.devmounta.in" target="_blank">here</a>. But if you are interested in taking the code class, you can apply <a href="http://devmounta.in/apply#/apply" target="_blank">here</a>.
+                    <p><b>2013-Current</b></p>
+                    <p><a href="http://www.devmounta.in" target="_blank">DevMountain</a> is an industry-leading code school nestled in the heart of the Wasatch Mountains. Started by Tyler and 2 other superb gentlemen, DevMountain fills the skills gap by delivering capable engineers to the only increasing demand in the tech industry.</p>
+                    <p>Since 2013, DevMountain maintains its reputation of being the most accessible and impactful code school in the country by bringing affordability to the highest quality, hands-on education in the industry. DevMountain's expert faculty love sharing their craft and empowering the next wave of programmers and entrepreneurs.</p>
+                    <p>With two locations in both Salt Lake City and Provo, DevMountain offers a variety of 12-week course different skill-specific curriculums for inspiring devs to choose from. Since launch, DevMountain has graduated over 300 students who go on to launch successful careers at tech companies such as Zendesk, Reddit, Domo, MX and more.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -800,16 +856,13 @@
                     <h4 class="modal-title">Logo Layover</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_venture_layover.png"> 
+                    <img src="img/modal_venture_layover.png"> 
                 </div>
                 <div class="modal-body">
-                    <a href="https://itunes.apple.com/us/app/logo-layover/id885064834?mt=8" target="_blank">Logo Layover</a> is my first iPhone app. In June of 2014 I decided I wanted to try my hand at iPhone apps. You can <a href="http://www.trich.me/blog/first-iphone-app-experience/">read about my experience</a> on my blog.
-                    </br>
-                    </br>
-                    I was in charge of DevMountain's and Tute Genomics' social accounts at the time. I found myself always wanting company logos on pictures I posted. Logo Layover does just that. Lays a logo on any picture.
-                    </br>
-                    </br>
-                    Check it out on the iOS App Store <a href="https://itunes.apple.com/us/app/logo-layover/id885064834?mt=8" target="_blank">here</a>.
+                    <p><b>Made in 2014</b></p>
+                    <p><a href="https://itunes.apple.com/us/app/logo-layover/id885064834?mt=8" target="_blank">Logo Layover</a> is Tyler's first try at an iPhone application, an experience you can <a href="http://www.trich.me/blog/first-iphone-app-experience/">read about on his blog</a>. Through out Tyler's entrepreneurial ventures he has been over design/front-end development/social and other design centric tasks. He always found himself struggling to brand his company's content in a mobile setting.</p>
+                    <p>Logo Layover takes care of that problem for digital mobile marketers. Logo Layover is an iPhone application that allows digital/mobile marketers to place a logo over company specific branded pictures. Check it out on the iOS App Store <a href="https://itunes.apple.com/us/app/logo-layover/id885064834?mt=8" target="_blank">here</a>.</p>
+                    <p>Logo Layover has had thousands of downloads, 10s of thousands of pictures made, and is continuing to help brands around the world.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="#" data-dismiss="modal" class="btn">Close</a>
@@ -824,37 +877,27 @@
                     <h4 class="modal-title">Garish Apparel</h4>
                 </div>
                 <div class="modal-picture">
-                    <img src="/img/modal_venture_garish.png"> 
+                    <img src="img/modal_venture_garish.png"> 
                 </div>
                 <div class="modal-body">
-                    Garish Apparel started when I was a junior in High School (I'll let you guess how long ago that is). It started with just slapping doodles from class on to t-shirts.
-                    </br>
-                    </br>
-                    I started wearing the shirts around myself because I thought they were the coolest thing since sliced bread. To my surprise, people started asking me where I got the shirts. That was the birth of Garish Apparel. I started putting my designs on t-shirts, hats, sweatshirts, and anything else I could afford
-                    </br>
-                    </br>
-                    Unfortunately I no longer have a dedicated website for the clothing because other things in my life have taken precedence. But to this day, I still design and create apparel for Garish.
+                    <p><b>2005-2009</b></p>
+                    <p>Garish Apparel was started by Tyler when he was a junior in High School. It started from doodles in the classroom to ending up on his own t-shirts.</p>
+                    <p>Tyler started wearing the shirts around town because he thought they were the coolest thing since Gap Hoodies. To Tyler's surprise, people started asking where they can purchase the shirts. That was the birth of Garish Apparel. Tyler started putting designs on t-shirts, hats, sweatshirts, and anything else he could afford.
+                    </p>
+                    <p>Tyler grew the company for years as a hobby but it became more than that. He recalls a time when he sold over 500 shirts in under an hour outside the BYU stadium.
+                    </p>
+                    <p>
+                    Unfortunately Tyler no longer has dedicated time or website for the clothing. But Tyler still loves, to this day, to design and create his own apparel.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <a href="#" data-dismiss="modal" class="btn">Close</a>
                 </div>
         </div>
     </div>
-	
-    <center style="margin:50px auto;">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- trich.me -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:728px;height:90px"
-             data-ad-client="ca-pub-2418532346900946"
-             data-ad-slot="8698826115"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </center>
 
     <footer>
-        &copy; 2013
+        &copy; 2015
         </br>
         <a href="https://twitter.com/#!/trich_" target="_blank">@trich_</a> Tyler Richards
         </br>
