@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var text = ["a Father", "a Designer", "a Founder", "a Dreamer", "a Marketer", "an Entrepreneur", "a Coder", "T.Rich"];
+    var text = ["a Father", "a Designer", "a Founder", "a Photographer", "a Marketer", "a Droner", "an Entrepreneur", "a Coder", "T.Rich"];
     var counter = 0;
     var elem = document.getElementById("changeText");
     setInterval(change, 5000);
@@ -17,6 +17,7 @@ $(function(){
 $(document).ready(function(){
     $('.aboutme').toggle("slow"); 
     $('.myventures').hide("slow");
+    $('.myphotos').hide("slow");
     $('.contactme').hide("slow");
     $("#menu-toggle").click(function(){
 
@@ -39,10 +40,19 @@ $(document).ready(function(){
                 $('.aboutme').toggle("slow");
                 $('.maintitle').hide("slow");
                 $('.myventures').hide("slow");
+                $('.myphotos').hide("slow");
                 $('.contactme').hide("slow");
             });
             $('#ventures').click(function(){
                 $('.myventures').toggle("slow");
+                $('.myphotos').hide("slow");
+                $('.aboutme').hide("slow");
+                $('.contactme').hide("slow");
+                $('.maintitle').hide("slow");
+            });
+            $('#photography').click(function(){
+                $('.myphotos').toggle("slow");
+                $('.myventures').hide("slow");
                 $('.aboutme').hide("slow");
                 $('.contactme').hide("slow");
                 $('.maintitle').hide("slow");
@@ -51,6 +61,7 @@ $(document).ready(function(){
                 $('.contactme').toggle("slow");
                 $('.maintitle').hide("slow");
                 $('.myventures').hide("slow");
+                $('.myphotos').hide("slow");
                 $('.aboutme').hide("slow");
             });
             /*$('#logos').onclick(function(){

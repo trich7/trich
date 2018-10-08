@@ -89,7 +89,7 @@ ul#main-menu {
     position: absolute;
     -webkit-padding-start: 0px;
     padding: none !important;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 ul#main-menu .button {
@@ -148,6 +148,10 @@ ul#main-menu .button:hover {
     font-family: "proxima-nova",sans-serif !important;
     font-weight: bolder;
     text-align: left;
+}
+
+h1.main-title {
+
 }
 
 #changeText {
