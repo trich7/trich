@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var text = ["a Father", "a Designer", "a Founder", "a Photographer", "a Marketer", "a Droner", "an Entrepreneur", "a Coder", "T.Rich"];
+    var text = ["a Father", "a Technologist", "a Founder", "a Photographer", "a Marketer", "a Droner", "an Entrepreneur", "a Coder", "a Crypto Enthusiast", "a Designer", "T.Rich"];
     var counter = 0;
     var elem = document.getElementById("changeText");
     setInterval(change, 5000);
